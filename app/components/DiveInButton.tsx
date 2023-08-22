@@ -2,9 +2,11 @@ import Link from 'next/link';
 
 const DiveInButton = () => {
 	return (
-		<button className='bg-black rounded-full p-2 text-md h-12 mt-16 font-semibold text-white'>
-			<Link href='/hastaliklar'> Keşfet </Link>
-		</button>
+		<Link href='/hastaliklar'>
+			<div className='h-12 w-full bg-black rounded-full p-2 text-md  mt-16 font-semibold text-white flex flex-col justify-center items-center'>
+				<button className=''>Keşfet</button>
+			</div>{' '}
+		</Link>
 	);
 };
 

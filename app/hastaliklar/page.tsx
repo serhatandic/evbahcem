@@ -1,5 +1,11 @@
+import DiseasesGrid from '../components/DiseasesGrid';
+
 const Diseases = () => {
-	return <div>asd</div>;
+	return (
+		<div>
+			<DiseasesGrid />
+		</div>
+	);
 };
 
 export default Diseases;

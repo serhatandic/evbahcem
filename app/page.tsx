@@ -4,7 +4,7 @@ import DiveInButton from './components/DiveInButton';
 
 export default function Home() {
 	return (
-		<div className='bg-orange-200 text-gray-800 h-screen flex justify-center'>
+		<div className='h-screen flex justify-center'>
 			<div className='flex flex-col  w-8/12 md:w-6/12 lg:w-5/12'>
 				<FloatingNavbar />
 				<ShortPitch />
