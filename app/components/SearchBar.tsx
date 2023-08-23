@@ -53,9 +53,9 @@ const SearchBar = ({ passFilteredData }: Props) => {
 		setSearchQuery(e.target.value);
 	};
 	return (
-		<div className='flex flex-col relative'>
+		<div className='flex flex-col relative w-full'>
 			<input
-				className='w-32 focus:outline-none'
+				className='w-10/12 md:w-11/12'
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
 			/>

@@ -11,7 +11,7 @@ export default function Home() {
 				<ShortPitch />
 				<DiveInButton />
 				<div>
-					<h6 className='text-xs absolute bottom-4 self-center'>
+					<h6 className='text-xs absolute bottom-2 left-15 self-center'>
 						<Link href='/privacy-policy'>Privacy Policy</Link>
 					</h6>
 				</div>
