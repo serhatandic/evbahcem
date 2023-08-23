@@ -55,7 +55,7 @@ const SearchBar = ({ passFilteredData }: Props) => {
 	return (
 		<div className='flex flex-col relative w-full'>
 			<input
-				className='w-10/12 md:w-11/12'
+				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
 			/>
