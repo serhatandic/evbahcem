@@ -28,7 +28,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				<div className='mb-4'>
 					<ul>
 						{sicknesses[idx].sections.map((section, idx) => (
-							<li key={idx}>
+							<li className='pb-2 last:pb-0 first:pt-2' key={idx}>
 								<a href={`#${section.header}`}>
 									{`-> ${section.header}`}
 								</a>
