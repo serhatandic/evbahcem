@@ -5,7 +5,7 @@ import sicknesses from '../data/data.json';
 import { useEffect, useState } from 'react';
 import SearchResults from './SearchResults';
 
-const SearchBar = () => {
+const SearchBar = ({ passFilteredData }) => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [filteredData, setFilteredData] = useState([]);
 
@@ -30,6 +30,10 @@ const SearchBar = () => {
 		);
 	}, [searchQuery]);
 
+	useEffect(() => {
+		passFilteredData(filteredData);
+	}, [filteredData, passFilteredData]);
+
 	const handleSearch = (e) => {
 		console.log('fired');
 		setSearchQuery(e.target.value);
@@ -42,7 +46,6 @@ const SearchBar = () => {
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
 			/>
-			<SearchResults data={filteredData} />
 		</div>
 	);
 };
