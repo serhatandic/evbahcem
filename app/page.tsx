@@ -1,6 +1,7 @@
 import FloatingNavbar from './components/FloatingNavbar';
 import ShortPitch from './components/ShortPitch';
 import DiveInButton from './components/DiveInButton';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -9,6 +10,11 @@ export default function Home() {
 				<FloatingNavbar />
 				<ShortPitch />
 				<DiveInButton />
+				<div>
+					<h6 className='text-xs absolute bottom-4 self-center'>
+						<Link href='/privacy-policy'>Privacy Policy</Link>
+					</h6>
+				</div>
 			</div>
 		</div>
 	);
