@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
 import { useState } from 'react';
@@ -27,7 +28,9 @@ const FloatingNavbar = () => {
 			<nav
 				className={`navbar navbar-expand-lg navbar-light bg-light h-12 w-full bg-white mt-7  flex items-center gap-8 ${navbarShape}`}
 			>
-				<h2 className='ml-4 font-medium'>Belirti.org</h2>
+				<Link href='/'>
+					<h2 className='ml-4 font-medium'>Belirti.org</h2>
+				</Link>
 				<SearchBar passFilteredData={passFilteredData} />
 			</nav>
 			<SearchResults data={searchResults} />
