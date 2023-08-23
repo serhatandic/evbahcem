@@ -18,7 +18,6 @@ const sicknesses = rawSicknesses as {
 };
 
 const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
-	console.log(sicknesses[params.hastalik]);
 	return (
 		<div className='p-24'>
 			<h1 className='text-4xl font-bold'>
