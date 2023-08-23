@@ -19,7 +19,7 @@ const sicknesses = rawSicknesses as {
 
 const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 	return (
-		<div className='p-24'>
+		<div className='p-12 sm-p-24'>
 			<h1 className='text-4xl font-bold'>
 				{sicknesses[params.hastalik].title}
 			</h1>
