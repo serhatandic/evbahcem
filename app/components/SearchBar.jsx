@@ -38,6 +38,7 @@ const SearchBar = () => {
 	return (
 		<div className='flex flex-col relative'>
 			<input
+				className='w-32 focus:outline-none'
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
 			/>
