@@ -7,6 +7,7 @@ type Props = {
 type Item = {
 	title: string;
 	index: number;
+	source: string;
 };
 
 const SearchResults = ({ data }: Props) => {
@@ -17,7 +18,11 @@ const SearchResults = ({ data }: Props) => {
 				return (
 					<Link
 						key={item.title}
-						href={`hastaliklar/${item.index}/${titleWithoutSpaces}`}
+						href={`${
+							item.source === 'sicknesses'
+								? 'hastaliklar'
+								: 'makaleler'
+						}/${item.index}/${titleWithoutSpaces}`}
 					>
 						<div className=' bg-white gap-2 border-b-2 p-2'>
 							{item.title}

@@ -3,8 +3,8 @@
 import Fuse from 'fuse.js';
 import { debounce } from 'debounce';
 import sicknesses from '../data/data.json';
+import articles from '../data/saglikRehberi.json';
 import { useEffect, useState } from 'react';
-import SearchResults from './SearchResults';
 
 type Props = {
 	passFilteredData: (data: Array<Item>) => void;
@@ -13,6 +13,7 @@ type Props = {
 type Item = {
 	title: string;
 	index: number;
+	source: string;
 };
 
 type Event = {
@@ -24,11 +25,20 @@ type Event = {
 const SearchBar = ({ passFilteredData }: Props) => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [filteredData, setFilteredData] = useState<Array<Item>>([]);
-
+	const allData = [
+		...Object.values(sicknesses).map((item) => ({
+			...item,
+			source: 'sicknesses',
+		})),
+		...Object.values(articles).map((item) => ({
+			...item,
+			source: 'articles',
+		})),
+	];
 	useEffect(() => {
 		if (!searchQuery) return setFilteredData([]);
 
-		const fuse = new Fuse(Object.values(sicknesses), {
+		const fuse = new Fuse(allData, {
 			keys: ['title', 'entryParagraph'],
 			shouldSort: true,
 			includeScore: true,
@@ -38,11 +48,22 @@ const SearchBar = ({ passFilteredData }: Props) => {
 		const results = fuse.search(searchQuery);
 
 		setFilteredData(
-			results.map(({ item, refIndex }) => ({
-				title: item.title,
-				index: refIndex,
-			}))
+			results.map(({ item, refIndex }) => {
+				if (item.source === 'articles') {
+					return {
+						title: item.title,
+						index: refIndex - Object.keys(sicknesses).length,
+						source: item.source,
+					};
+				}
+				return {
+					title: item.title,
+					index: refIndex,
+					source: item.source,
+				};
+			})
 		);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [searchQuery]);
 
 	useEffect(() => {
