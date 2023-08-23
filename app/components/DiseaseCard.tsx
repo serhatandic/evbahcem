@@ -21,9 +21,11 @@ const DiseaseCard = ({ sickness, id }: DiseaseCardProps) => {
 			</p>
 
 			<div className='flex justify-end mt-auto'>
-				<button className='bg-orange-500 text-white rounded-lg px-4 py-2 mt-8'>
-					<Link href={`hastaliklar/${id}`}> Daha Fazla</Link>
-				</button>
+				<Link href={`hastaliklar/${id}`}>
+					<button className='bg-orange-500 text-white rounded-lg px-4 py-2 mt-8'>
+						Daha Fazla
+					</button>
+				</Link>
 			</div>
 		</div>
 	);
