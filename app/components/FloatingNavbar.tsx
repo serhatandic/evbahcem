@@ -1,15 +1,20 @@
 'use client';
-
-import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
 import { useState } from 'react';
 
+type Data = Array<Item>;
+
+type Item = {
+	title: string;
+	index: string;
+};
+
 const FloatingNavbar = () => {
-	const [searchResults, setSearchResults] = useState([]);
+	const [searchResults, setSearchResults] = useState<Array<Item>>([]);
 	const [navbarShape, setNavbarShape] = useState('rounded-full');
 
-	const passFilteredData = (data) => {
+	const passFilteredData = (data: Data) => {
 		setSearchResults(data);
 		if (data.length === 0) {
 			setNavbarShape('rounded-full');
