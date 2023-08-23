@@ -6,7 +6,7 @@ type Props = {
 
 type Item = {
 	title: string;
-	index: number;
+	index: string;
 	source: string;
 };
 

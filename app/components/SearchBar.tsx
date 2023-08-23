@@ -3,7 +3,7 @@
 import Fuse from 'fuse.js';
 import { debounce } from 'debounce';
 import sicknesses from '../data/data.json';
-import articles from '../data/saglikRehberi.json';
+import rawArticles from '../data/saglikRehberi.json';
 import { useEffect, useState } from 'react';
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 
 type Item = {
 	title: string;
-	index: number;
+	index: string;
 	source: string;
 };
 
@@ -22,23 +22,40 @@ type Event = {
 	};
 };
 
+const articles = rawArticles as {
+	[key: string]: {
+		title: string;
+		sections: Array<{
+			header: string;
+			content: string;
+		}>;
+	};
+};
+
 const SearchBar = ({ passFilteredData }: Props) => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [filteredData, setFilteredData] = useState<Array<Item>>([]);
-	const allData = [
-		...Object.values(sicknesses).map((item) => ({
-			...item,
+
+	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
+		return {
+			index: String(index),
+			title: sickness.title,
+			entryParagraph: sickness.entryParagraph,
 			source: 'sicknesses',
-		})),
-		...Object.values(articles).map((item) => ({
-			...item,
+		};
+	});
+	const articleValues = Object.keys(articles).map((key) => {
+		return {
+			index: key,
+			title: articles[key].title,
 			source: 'articles',
-		})),
-	];
+		};
+	});
+
 	useEffect(() => {
 		if (!searchQuery) return setFilteredData([]);
 
-		const fuse = new Fuse(allData, {
+		const fuse = new Fuse([...sicknessValues, ...articleValues], {
 			keys: ['title', 'entryParagraph'],
 			shouldSort: true,
 			includeScore: true,
@@ -46,22 +63,12 @@ const SearchBar = ({ passFilteredData }: Props) => {
 		});
 
 		const results = fuse.search(searchQuery);
-
 		setFilteredData(
-			results.map(({ item, refIndex }) => {
-				if (item.source === 'articles') {
-					return {
-						title: item.title,
-						index: refIndex - Object.keys(sicknesses).length,
-						source: item.source,
-					};
-				}
-				return {
-					title: item.title,
-					index: refIndex,
-					source: item.source,
-				};
-			})
+			results.map(({ item, refIndex }) => ({
+				title: item.title,
+				index: item.index,
+				source: item.source,
+			}))
 		);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [searchQuery]);

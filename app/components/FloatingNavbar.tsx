@@ -8,7 +8,7 @@ type Data = Array<Item>;
 
 type Item = {
 	title: string;
-	index: number;
+	index: string;
 	source: string;
 };
 
