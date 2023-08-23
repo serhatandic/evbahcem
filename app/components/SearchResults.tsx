@@ -10,7 +10,6 @@ type Item = {
 };
 
 const SearchResults = ({ data }: Props) => {
-	console.log(data);
 	return (
 		<div className='absolute top-16 w-8/12 md:w-6/12 lg:w-5/12'>
 			{data.slice(0, 3)?.map((item: Item) => {

@@ -35,10 +35,8 @@ const SearchBar = ({ passFilteredData }) => {
 	}, [filteredData, passFilteredData]);
 
 	const handleSearch = (e) => {
-		console.log('fired');
 		setSearchQuery(e.target.value);
 	};
-	console.log(filteredData);
 	return (
 		<div className='flex flex-col relative'>
 			<input
