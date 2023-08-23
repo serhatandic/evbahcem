@@ -7,7 +7,7 @@ type Data = Array<Item>;
 
 type Item = {
 	title: string;
-	index: string;
+	index: number;
 };
 
 const FloatingNavbar = () => {

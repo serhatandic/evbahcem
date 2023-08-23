@@ -6,7 +6,7 @@ type Props = {
 
 type Item = {
 	title: string;
-	index: string;
+	index: number;
 };
 
 const SearchResults = ({ data }: Props) => {
