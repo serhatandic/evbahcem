@@ -41,7 +41,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				{sicknesses[idx].sections.map((section, idx) => (
 					<div key={idx}>
 						<a id={`${section.header}`}></a>
-						<h3 className='text-2xl'>{section.header}</h3>
+						<h3 className='text-2xl font-bold'>{section.header}</h3>
 						<div
 							dangerouslySetInnerHTML={{
 								__html: section.content,
