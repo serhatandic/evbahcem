@@ -6,7 +6,7 @@ import sicknesses from '../data/data.json';
 import rawArticles from '../data/saglikRehberi.json';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setBlur } from '../slices/blurSlice';
+import { setBlur, setSearchBarFocus } from '../slices/blurSlice';
 import { setSearchResults, setSearchQuery } from '../slices/searchSlice';
 
 type Item = {
@@ -100,6 +100,14 @@ const SearchBar = () => {
 				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
+				onFocus={() => {
+					dispatch(setSearchBarFocus(true));
+					dispatch(setBlur(true));
+				}}
+				onBlur={() => {
+					dispatch(setSearchBarFocus(false));
+					dispatch(setBlur(false));
+				}}
 			/>
 		</div>
 	);

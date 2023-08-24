@@ -20,6 +20,13 @@ type SearchResultsState = {
 	};
 };
 
+type BlurState = {
+	blur: {
+		searchBarHasFocus: boolean;
+		isBlurred: boolean;
+	};
+};
+
 const FloatingNavbar = () => {
 	const [navbarShape, setNavbarShape] = useState('rounded-full');
 	const searchResults = useSelector(
@@ -27,6 +34,9 @@ const FloatingNavbar = () => {
 	);
 	const searchQuery = useSelector(
 		(state: SearchResultsState) => state.search.searchQuery
+	);
+	const searchBarHasFocus = useSelector(
+		(state: BlurState) => state.blur.searchBarHasFocus
 	);
 	useEffect(() => {
 		if (searchQuery) {
@@ -45,7 +55,11 @@ const FloatingNavbar = () => {
 				</Link>
 				<SearchBar />
 			</nav>
-			<SearchResults data={searchResults} searchQuery={searchQuery} />
+			<SearchResults
+				data={searchResults}
+				searchQuery={searchQuery}
+				searchBarHasFocus={searchBarHasFocus}
+			/>
 		</div>
 	);
 };

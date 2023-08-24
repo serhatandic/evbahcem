@@ -3,6 +3,7 @@ import Link from 'next/link';
 type Props = {
 	data: Array<Item>;
 	searchQuery: string;
+	searchBarHasFocus: boolean;
 };
 
 type Item = {
@@ -11,10 +12,10 @@ type Item = {
 	source: string;
 };
 
-const SearchResults = ({ data, searchQuery }: Props) => {
+const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 	return (
 		<>
-			{searchQuery && (
+			{searchQuery && searchBarHasFocus && (
 				<div className='absolute top-16 w-9/12 md:w-6/12 lg:w-5/12 z-10'>
 					{data.length ? (
 						data.slice(0, 3)?.map((item: Item) => {
