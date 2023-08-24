@@ -15,7 +15,7 @@ const SearchResults = ({ data, searchQuery }: Props) => {
 	return (
 		<>
 			{searchQuery && (
-				<div className='absolute top-16 w-9/12 md:w-6/12 lg:w-5/12'>
+				<div className='absolute top-16 w-9/12 md:w-6/12 lg:w-5/12 z-10'>
 					{data.length ? (
 						data.slice(0, 3)?.map((item: Item) => {
 							const titleWithoutSpaces = item.title.replace(
