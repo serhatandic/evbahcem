@@ -1,7 +1,7 @@
 const ShortPitch = () => {
 	return (
 		<div>
-			<div className='self-center mt-32 font-bold text-7xl'>
+			<div className='self-center mt-14 sm:mt-36 font-bold text-7xl'>
 				Doğru Bilgi, Doğru Yaşam.
 			</div>
 			<div className='mt-8'>
