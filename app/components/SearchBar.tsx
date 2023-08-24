@@ -88,7 +88,7 @@ const SearchBar = () => {
 			threshold: 0.4, // You can adjust this value based on how strict you want the matching to be
 		});
 
-		const results = fuse.search(searchQuery);
+		const results = fuse.search(searchQuery.toLowerCase());
 		dispatch(
 			setSearchResults(
 				results.map(({ item, refIndex }) => ({

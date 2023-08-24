@@ -17,9 +17,9 @@ export default function Home() {
 		<div className={`h-screen flex justify-center `}>
 			<div className='flex flex-col  w-9/12 md:w-6/12 lg:w-5/12 '>
 				<FloatingNavbar />
-				<ShortPitch className={`${blur ? 'blur-sm' : 'blur-none'}`} />
+				<ShortPitch className={`${blur ? 'blur-md' : 'blur-none'}`} />
 				<DiveInButtons
-					className={` ${blur ? 'blur-sm' : 'blur-none'}`}
+					className={` ${blur ? 'blur-md' : 'blur-none'}`}
 				/>
 				{/* <div>
 					<h6 className='text-xs absolute bottom-2 left-15 self-center'>
