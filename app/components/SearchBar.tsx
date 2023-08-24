@@ -96,6 +96,7 @@ const SearchBar = () => {
 	return (
 		<div className='flex flex-col relative w-full'>
 			<input
+				defaultValue={searchQuery}
 				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
 				onChange={debounce(handleSearch, 500)}
