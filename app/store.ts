@@ -3,10 +3,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import blurSliceReducer from './slices/blurSlice';
 import searchSliceReducer from './slices/searchSlice';
+import stylingSliceReducer from './slices/stylingSlice';
+
 export const store = configureStore({
 	reducer: {
 		blur: blurSliceReducer,
 		search: searchSliceReducer,
+		styling: stylingSliceReducer,
 	},
 });
 

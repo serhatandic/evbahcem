@@ -1,10 +1,9 @@
 'use client';
 
 import Fuse from 'fuse.js';
-import { debounce } from 'debounce';
 import sicknesses from '../data/data.json';
 import rawArticles from '../data/saglikRehberi.json';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlur, setSearchBarFocus } from '../slices/blurSlice';
 import { setSearchResults, setSearchQuery } from '../slices/searchSlice';
@@ -28,6 +27,13 @@ type SearchResultsState = {
 	};
 };
 
+type BlurState = {
+	blur: {
+		searchBarHasFocus: boolean;
+		isBlurred: boolean;
+	};
+};
+
 const articles = rawArticles as {
 	[key: string]: {
 		title: string;
@@ -45,6 +51,10 @@ const SearchBar = () => {
 	const searchQuery = useSelector(
 		(state: SearchResultsState) => state.search.searchQuery
 	);
+	const searchBarHasFocus = useSelector(
+		(state: BlurState) => state.blur.searchBarHasFocus
+	);
+
 	const dispatch = useDispatch();
 	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
 		return {
@@ -68,7 +78,9 @@ const SearchBar = () => {
 			dispatch(setSearchResults([]));
 			return;
 		}
-		dispatch(setBlur(true));
+		if (searchBarHasFocus) {
+			dispatch(setBlur(true));
+		}
 		const fuse = new Fuse([...sicknessValues, ...articleValues], {
 			keys: ['title', 'entryParagraph'],
 			shouldSort: true,
@@ -96,17 +108,13 @@ const SearchBar = () => {
 	return (
 		<div className='flex flex-col relative w-full'>
 			<input
-				defaultValue={searchQuery}
+				value={searchQuery}
 				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
-				onChange={debounce(handleSearch, 500)}
+				onChange={handleSearch}
 				onFocus={() => {
 					dispatch(setSearchBarFocus(true));
 					dispatch(setBlur(true));
-				}}
-				onBlur={() => {
-					dispatch(setSearchBarFocus(false));
-					dispatch(setBlur(false));
 				}}
 			/>
 		</div>
