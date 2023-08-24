@@ -21,7 +21,7 @@ const Article = ({ params }: ArticleParams) => {
 	return (
 		<div className='p-12 md:px-36 lg:px-60 xl:px-80'>
 			<h1 className='text-4xl font-bold'>{articles[idx].title}</h1>
-			<div className='bg-orange-100 p-4'>
+			<div className='bg-orange-100 p-4 my-4'>
 				<h3 className='text-2xl'>İçindekiler</h3>
 				<div className='mb-4'>
 					<ul>
