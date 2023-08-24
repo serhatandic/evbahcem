@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 type Data = Array<Item>;
 
@@ -12,18 +13,28 @@ type Item = {
 	source: string;
 };
 
-const FloatingNavbar = () => {
-	const [searchResults, setSearchResults] = useState<Array<Item>>([]);
-	const [navbarShape, setNavbarShape] = useState('rounded-full');
-
-	const passFilteredData = (data: Data) => {
-		setSearchResults(data);
-		if (data.length === 0) {
-			setNavbarShape('rounded-full');
-		} else {
-			setNavbarShape('rounded-t-3xl rounded-b-none');
-		}
+type SearchResultsState = {
+	search: {
+		searchResults: Array<Item>;
+		searchQuery: string;
 	};
+};
+
+const FloatingNavbar = () => {
+	const [navbarShape, setNavbarShape] = useState('rounded-full');
+	const searchResults = useSelector(
+		(state: SearchResultsState) => state.search.searchResults
+	);
+	const searchQuery = useSelector(
+		(state: SearchResultsState) => state.search.searchQuery
+	);
+	useEffect(() => {
+		if (searchQuery) {
+			setNavbarShape('rounded-t-3xl');
+		} else {
+			setNavbarShape('rounded-full');
+		}
+	}, [searchQuery]);
 	return (
 		<div className='flex justify-center'>
 			<nav
@@ -32,9 +43,9 @@ const FloatingNavbar = () => {
 				<Link href='/'>
 					<h2 className='ml-4 font-medium'>Belirti.org</h2>
 				</Link>
-				<SearchBar passFilteredData={passFilteredData} />
+				<SearchBar />
 			</nav>
-			<SearchResults data={searchResults} />
+			<SearchResults data={searchResults} searchQuery={searchQuery} />
 		</div>
 	);
 };

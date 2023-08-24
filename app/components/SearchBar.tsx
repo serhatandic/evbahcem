@@ -5,12 +5,9 @@ import { debounce } from 'debounce';
 import sicknesses from '../data/data.json';
 import rawArticles from '../data/saglikRehberi.json';
 import { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setBlur } from '../slices/blurSlice';
-
-type Props = {
-	passFilteredData: (data: Array<Item>) => void;
-};
+import { setSearchResults, setSearchQuery } from '../slices/searchSlice';
 
 type Item = {
 	title: string;
@@ -24,6 +21,13 @@ type Event = {
 	};
 };
 
+type SearchResultsState = {
+	search: {
+		searchResults: Array<Item>;
+		searchQuery: string;
+	};
+};
+
 const articles = rawArticles as {
 	[key: string]: {
 		title: string;
@@ -34,9 +38,13 @@ const articles = rawArticles as {
 	};
 };
 
-const SearchBar = ({ passFilteredData }: Props) => {
-	const [searchQuery, setSearchQuery] = useState('');
-	const [filteredData, setFilteredData] = useState<Array<Item>>([]);
+const SearchBar = () => {
+	const filteredData = useSelector(
+		(state: SearchResultsState) => state.search.searchResults
+	);
+	const searchQuery = useSelector(
+		(state: SearchResultsState) => state.search.searchQuery
+	);
 	const dispatch = useDispatch();
 	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
 		return {
@@ -57,7 +65,7 @@ const SearchBar = ({ passFilteredData }: Props) => {
 	useEffect(() => {
 		if (!searchQuery) {
 			dispatch(setBlur(false));
-			setFilteredData([]);
+			dispatch(setSearchResults([]));
 			return;
 		}
 		dispatch(setBlur(true));
@@ -69,25 +77,24 @@ const SearchBar = ({ passFilteredData }: Props) => {
 		});
 
 		const results = fuse.search(searchQuery);
-		setFilteredData(
-			results.map(({ item, refIndex }) => ({
-				title: item.title,
-				index: item.index,
-				source: item.source,
-			}))
+		dispatch(
+			setSearchResults(
+				results.map(({ item, refIndex }) => ({
+					title: item.title,
+					index: item.index,
+					source: item.source,
+				}))
+			)
 		);
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [searchQuery]);
 
-	useEffect(() => {
-		passFilteredData(filteredData);
-	}, [filteredData, passFilteredData]);
-
 	const handleSearch = (e: Event) => {
-		setSearchQuery(e.target.value);
+		dispatch(setSearchQuery(e.target.value));
 	};
 	return (
-		<div className='flex flex-col relative w-full backdrop-blur-sm'>
+		<div className='flex flex-col relative w-full'>
 			<input
 				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
