@@ -73,12 +73,12 @@ const FloatingNavbar = () => {
 	);
 	const dispatch = useDispatch();
 	useEffect(() => {
-		if (searchQuery) {
+		if (searchQuery && searchBarHasFocus) {
 			dispatch(setNavbarRounded(false));
 		} else {
 			dispatch(setNavbarRounded(true));
 		}
-	}, [searchQuery, dispatch]);
+	}, [searchQuery, dispatch, searchBarHasFocus]);
 
 	useEffect(() => {
 		// This function will be called when the component is unmounted
