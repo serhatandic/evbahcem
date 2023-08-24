@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const DiveInButton = () => {
+type DiveInButtonProps = {
+	className: string;
+};
+
+const DiveInButton = ({ className }: DiveInButtonProps) => {
 	return (
-		<div className='flex justify-between gap-4'>
+		<div className={`flex justify-between gap-4 ` + className}>
 			<Link
 				className='h-12 md:h-24 w-6/12 bg-orange-100 rounded-3xl text-md  mt-16 font-semibold flex flex-col justify-start pl-4 pt-2'
 				href='/hastaliklar'
@@ -16,7 +20,7 @@ const DiveInButton = () => {
 				</div>
 				<p className='text-xs font-light hidden md:block'>
 					Hastalıklar, belirtiler ve tedaviler hakkında detaylı
-					bilgiler. İhtiyacınız olan bilgilere kolayca ulaşın.
+					bilgiler.
 				</p>
 			</Link>
 			<Link

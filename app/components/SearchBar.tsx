@@ -5,6 +5,8 @@ import { debounce } from 'debounce';
 import sicknesses from '../data/data.json';
 import rawArticles from '../data/saglikRehberi.json';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setBlur } from '../slices/blurSlice';
 
 type Props = {
 	passFilteredData: (data: Array<Item>) => void;
@@ -35,7 +37,7 @@ const articles = rawArticles as {
 const SearchBar = ({ passFilteredData }: Props) => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [filteredData, setFilteredData] = useState<Array<Item>>([]);
-
+	const dispatch = useDispatch();
 	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
 		return {
 			index: String(index),
@@ -53,8 +55,12 @@ const SearchBar = ({ passFilteredData }: Props) => {
 	});
 
 	useEffect(() => {
-		if (!searchQuery) return setFilteredData([]);
-
+		if (!searchQuery) {
+			dispatch(setBlur(false));
+			setFilteredData([]);
+			return;
+		}
+		dispatch(setBlur(true));
 		const fuse = new Fuse([...sicknessValues, ...articleValues], {
 			keys: ['title', 'entryParagraph'],
 			shouldSort: true,
@@ -81,7 +87,7 @@ const SearchBar = ({ passFilteredData }: Props) => {
 		setSearchQuery(e.target.value);
 	};
 	return (
-		<div className='flex flex-col relative w-full'>
+		<div className='flex flex-col relative w-full backdrop-blur-sm'>
 			<input
 				className='w-10/12 md:w-11/12 focus:outline-none'
 				placeholder='Arama yapın'
