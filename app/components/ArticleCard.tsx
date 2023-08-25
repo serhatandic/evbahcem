@@ -23,15 +23,14 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 			<h3 className='text-2xl font-semibold'>{article.title}</h3>
 			<div className='flex  mt-8 justify-between items-end'>
 				<p className='opacity-25 text-xs'>
-					{`Tahmini Okuma Süresi
-					${readingTime(wholeText).minutes.toFixed(1)} dk`}
+					{readingTime(wholeText).text}
 				</p>
 				<div className='flex justify-end mt-auto'>
 					<Link
 						className='bg-orange-500 text-white rounded-lg px-4 py-2 mt-8'
 						href={`makaleler/${id}/${titleWithoutSpaces}`}
 					>
-						<button>Detaylar</button>
+						<button>Details</button>
 					</Link>
 				</div>
 			</div>

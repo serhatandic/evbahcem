@@ -110,7 +110,7 @@ const SearchBar = () => {
 			<input
 				value={searchQuery}
 				className='w-10/12 md:w-11/12 focus:outline-none'
-				placeholder='Arama yapın'
+				placeholder='Search for anything'
 				onChange={handleSearch}
 				onFocus={() => {
 					dispatch(setSearchBarFocus(true));

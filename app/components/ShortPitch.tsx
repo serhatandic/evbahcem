@@ -6,12 +6,11 @@ const ShortPitch = ({ className }: ShortPitchProps) => {
 	return (
 		<div className={className}>
 			<div className='self-center mt-14 sm:mt-36 font-bold text-7xl'>
-				Doğru Bilgi, Doğru Yaşam.
+				Correct Information, Healthy Life.
 			</div>
 			<div className='mt-8'>
-				Sağlığınızın Kontrolü Artık Sizin Elinizde: Hastalıklar,
-				Belirtiler ve Doğal Tedavi Yöntemleriyle Hayatınızı
-				Şekillendirin!
+				Your Health Is Now In Your Hands: Shape Your Life with Diseases,
+				Symptoms, and Natural Treatment Methods!
 			</div>
 		</div>
 	);

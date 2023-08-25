@@ -13,14 +13,14 @@ const DiveInButton = ({ className }: DiveInButtonProps) => {
 				href='/hastaliklar'
 			>
 				<div className='flex gap-2 justify-center md:justify-start'>
-					<button className=''>Hastalıklar</button>
+					<button className=''>Diseases</button>
 					<div className=''>
 						<ArrowForwardIcon />
 					</div>
 				</div>
 				<p className='text-xs font-light hidden md:block'>
-					Hastalıklar, belirtiler ve tedaviler hakkında detaylı
-					bilgiler.
+					Detailed information about diseases, symptoms, and
+					treatments.
 				</p>
 			</Link>
 			<Link
@@ -28,14 +28,14 @@ const DiveInButton = ({ className }: DiveInButtonProps) => {
 				href='/makaleler'
 			>
 				<div className='flex gap-2 justify-center md:justify-start'>
-					<button className=''>Makaleler</button>
+					<button className=''>Articles</button>
 					<div className=''>
 						<ArrowForwardIcon />
 					</div>
 				</div>
 				<p className='text-xs font-light  hidden md:block'>
-					Sağlık ve yaşam konularında uzmanlardan makaleler. Bilinçli
-					yaşam kılavuzunuz.
+					Articles from experts on health and life topics. Your
+					conscious living guide.
 				</p>
 			</Link>
 		</div>

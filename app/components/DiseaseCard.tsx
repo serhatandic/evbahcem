@@ -28,13 +28,12 @@ const DiseaseCard = ({ sickness, id }: DiseaseCardProps) => {
 			</div>
 			<div className='flex  mt-8 justify-between items-end'>
 				<p className='opacity-25 text-xs'>
-					{`Tahmini Okuma Süresi
-					${readingTime(wholeText).minutes.toFixed(0)} dk`}
+					{readingTime(wholeText).text}
 				</p>
 				<div className='flex justify-end mt-auto'>
 					<Link href={`hastaliklar/${id}/${titleWithoutSpaces}`}>
 						<button className='bg-orange-500 text-white rounded-lg px-4 py-2'>
-							Daha Fazla
+							Details
 						</button>
 					</Link>
 				</div>

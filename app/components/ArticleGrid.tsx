@@ -21,7 +21,7 @@ const ArticleGrid = () => {
 			loader={<h4 className=''>Loading...</h4>}
 			endMessage={
 				<p style={{ textAlign: 'center' }}>
-					<b>Yayınlanan tüm makaleler bu kadar!</b>
+					<b>That is all we got !</b>
 				</p>
 			}
 		>

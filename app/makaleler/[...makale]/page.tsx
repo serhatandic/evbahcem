@@ -23,7 +23,7 @@ const Article = ({ params }: ArticleParams) => {
 			<div className='bg-orange-100 p-8'>
 				<h1 className='text-4xl font-bold'>{articles[idx].title}</h1>
 				<div className='bg-orange-50 p-4 my-4'>
-					<h3 className='text-2xl'>İçindekiler</h3>
+					<h3 className='text-2xl'>Table of Contents</h3>
 					<div className='mb-4'>
 						<ul>
 							{articles[idx].sections.map((section, idx) => (

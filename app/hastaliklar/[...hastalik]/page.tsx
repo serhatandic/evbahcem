@@ -25,7 +25,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				<h1 className='text-4xl font-bold'>{sicknesses[idx].title}</h1>
 				<p className='mt-2 mb-4'>{sicknesses[idx].entryParagraph}</p>
 				<div className='bg-orange-50 p-4 my-4'>
-					<h3 className='text-2xl'>İçindekiler</h3>
+					<h3 className='text-2xl'>Table of Contents</h3>
 					<div className='mb-4'>
 						<ul>
 							{sicknesses[idx].sections.map((section, idx) => (
