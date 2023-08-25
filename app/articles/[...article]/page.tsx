@@ -1,3 +1,5 @@
+'use client';
+import { useEffect, useState } from 'react';
 import rawArticles from '../../data/saglikRehberi.json';
 import Link from 'next/link';
 
@@ -18,14 +20,22 @@ const articles = rawArticles as {
 };
 
 const Article = ({ params }: ArticleParams) => {
+	const [randomKeys, setRandomKeys] = useState<string[]>([]);
+
 	const idx = params.article[0];
 	const keys = Object.keys(articles).filter(
 		(_, index) => index !== Number(idx)
 	);
-	const randomKeys = Array.from(
-		{ length: 4 },
-		() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
-	);
+
+	useEffect(() => {
+		setRandomKeys(
+			Array.from(
+				{ length: 4 },
+				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
+			)
+		);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [idx]);
 
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
@@ -78,7 +88,7 @@ const Article = ({ params }: ArticleParams) => {
 						>
 							<div className='bg-orange-50 p-2 flex flex-col justify-between'>
 								<div>
-									<a id={`${articles[key].title}`}></a>
+									<div id={`${articles[key].title}`}></div>
 									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
 									<p className=''>
 										{articles[key].sections[0].content
@@ -89,7 +99,7 @@ const Article = ({ params }: ArticleParams) => {
 									</p>
 								</div>
 								<div className='flex justify-end'></div>
-							</div>{' '}
+							</div>
 						</Link>
 					))}
 				</div>

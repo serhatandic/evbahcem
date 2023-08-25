@@ -45,7 +45,6 @@ type StylingState = {
 
 const FloatingNavbar = ({ source }: Props) => {
 	const dispatch = useDispatch();
-	dispatch(setSourcePage(source));
 	const navbarRounded = useSelector(
 		(state: StylingState) => state.styling.navbarRounded
 	);
@@ -81,6 +80,10 @@ const FloatingNavbar = ({ source }: Props) => {
 			dispatch(setNavbarRounded(true));
 		}
 	}, [searchQuery, dispatch, searchBarHasFocus, sourcePage]);
+
+	useEffect(() => {
+		dispatch(setSourcePage(source));
+	}, [source, dispatch]);
 
 	useEffect(() => {
 		// This function will be called when the component is unmounted

@@ -1,3 +1,5 @@
+'use client';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import rawSicknesses from '../../data/data.json';
 
@@ -19,15 +21,22 @@ const sicknesses = rawSicknesses as {
 };
 
 const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
+	const [randomKeys, setRandomKeys] = useState<string[]>([]);
+
 	const idx = params.disease[0];
 	const keys = Object.keys(sicknesses).filter(
 		(_, index) => index !== Number(idx)
 	);
-	const randomKeys = Array.from(
-		{ length: 4 },
-		() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
-	);
 
+	useEffect(() => {
+		setRandomKeys(
+			Array.from(
+				{ length: 4 },
+				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
+			)
+		);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [idx]);
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>
@@ -80,7 +89,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 						>
 							<div className='bg-orange-50 p-2 flex flex-col justify-between'>
 								<div>
-									<a id={`${sicknesses[key].title}`}></a>
+									<div id={`${sicknesses[key].title}`}></div>
 									<h2 className='font-bold'>{`${sicknesses[key].title}`}</h2>
 									<p className=''>
 										{sicknesses[key].entryParagraph
