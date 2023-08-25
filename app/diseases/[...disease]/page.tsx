@@ -43,7 +43,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				<h1 className='text-4xl font-bold'>{sicknesses[idx].title}</h1>
 				<p className='mt-2 mb-4'>{sicknesses[idx].entryParagraph}</p>
 				<div className='bg-orange-50 p-4 my-4'>
-					<h3 className='text-2xl'>Table of Contents</h3>
+					<h2 className='text-2xl'>Table of Contents</h2>
 					<div className='mb-4'>
 						<ul>
 							{sicknesses[idx].sections.map((section, idx) => (
@@ -77,7 +77,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 			</div>
 			<div className='mt-4 bg-orange-100 p-8'>
 				<h2 className='font-bold text-2xl mb-4'>
-					You might also want to read about these
+					You might also want to read these
 				</h2>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 					{randomKeys.map((key, idx) => (
@@ -105,7 +105,7 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				</div>
 				<div className='flex justify-between pt-3 gap-3 flex-col sm:flex-row'>
 					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={'/diseases'}
 					>
 						<button className='flex justify-center text-center'>
@@ -113,13 +113,13 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 						</button>
 					</Link>
 					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/`}
 					>
 						<button>Home</button>
 					</Link>
 					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/articles`}
 					>
 						<button>Check Other Articles</button>
