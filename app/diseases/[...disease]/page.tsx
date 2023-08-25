@@ -105,24 +105,24 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				</div>
 				<div className='flex justify-between pt-3 gap-3 flex-col sm:flex-row'>
 					<Link
-						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-800 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={'/diseases'}
 					>
 						<button className='flex justify-center text-center'>
-							Check Diseases
+							Check Other Diseases
 						</button>
 					</Link>
 					<Link
-						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-800 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/`}
 					>
 						<button>Home</button>
 					</Link>
 					<Link
-						className='bg-orange-600 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-orange-800 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/articles`}
 					>
-						<button>Check Other Articles</button>
+						<button>Check Articles</button>
 					</Link>
 				</div>
 			</div>
