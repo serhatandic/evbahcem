@@ -6,9 +6,9 @@ import { Providers } from './components/Providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Belirti.org - Hastalık Rehberiniz',
+	title: 'Belirti.org - Your Guide to Healthy Living',
 	description:
-		'Belirti.org, hastalıkların belirtilerini, nedenlerini ve tedavi yöntemlerini anlamanıza yardımcı olan kapsamlı bir rehberdir. Sağlıklı bir yaşam için ihtiyacınız olan bilgilere hemen erişin.',
+		'Belirti.org, provides information about diseases, symptoms, and treatments. You can find the most common symptoms of diseases and information about their treatments.',
 };
 
 export default function RootLayout({
