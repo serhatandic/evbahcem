@@ -28,8 +28,8 @@ const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 									key={item.title}
 									href={`${
 										item.source === 'sicknesses'
-											? 'hastaliklar'
-											: 'makaleler'
+											? 'diseases'
+											: 'articles'
 									}/${item.index}/${titleWithoutSpaces}`}
 								>
 									<div className=' bg-white gap-2 border-b-2 p-2'>

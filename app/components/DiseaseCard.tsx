@@ -31,7 +31,7 @@ const DiseaseCard = ({ sickness, id }: DiseaseCardProps) => {
 					{readingTime(wholeText).text}
 				</p>
 				<div className='flex justify-end mt-auto'>
-					<Link href={`hastaliklar/${id}/${titleWithoutSpaces}`}>
+					<Link href={`diseases/${id}/${titleWithoutSpaces}`}>
 						<button className='bg-orange-500 text-white rounded-lg px-4 py-2'>
 							Details
 						</button>

@@ -10,7 +10,7 @@ const DiveInButton = ({ className }: DiveInButtonProps) => {
 		<div className={`flex justify-between gap-4 ` + className}>
 			<Link
 				className='h-12 md:h-24 w-6/12 bg-orange-100 rounded-3xl text-md  mt-16 font-semibold flex flex-col justify-start pl-4 pt-2'
-				href='/hastaliklar'
+				href='/diseases'
 			>
 				<div className='flex gap-2 justify-center md:justify-start'>
 					<button className=''>Diseases</button>

@@ -2,7 +2,7 @@ import rawSicknesses from '../../data/data.json';
 
 type DiseaseDetailsParams = {
 	params: {
-		hastalik: string;
+		disease: string;
 	};
 };
 
@@ -18,7 +18,7 @@ const sicknesses = rawSicknesses as {
 };
 
 const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
-	const idx = params.hastalik[0];
+	const idx = params.disease[0];
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>
