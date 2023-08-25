@@ -2,7 +2,7 @@ import rawArticles from '../../data/saglikRehberi.json';
 
 type ArticleParams = {
 	params: {
-		makale: string;
+		article: string;
 	};
 };
 
@@ -17,7 +17,7 @@ const articles = rawArticles as {
 };
 
 const Article = ({ params }: ArticleParams) => {
-	const idx = params.makale[0];
+	const idx = params.article[0];
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>

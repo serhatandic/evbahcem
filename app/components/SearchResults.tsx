@@ -40,7 +40,8 @@ const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 						})
 					) : (
 						<div className=' bg-white gap-2 border-b-2 p-2'>
-							Aramazına uygun sonuç bulunamadı
+							No results found. Please try again with a different
+							search query.
 						</div>
 					)}
 				</div>

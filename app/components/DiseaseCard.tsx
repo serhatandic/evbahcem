@@ -2,7 +2,7 @@ import Link from 'next/link';
 import readingTime from 'reading-time';
 
 type DiseaseCardProps = {
-	id: number;
+	id: string;
 	sickness: {
 		title: string;
 		entryParagraph: string;

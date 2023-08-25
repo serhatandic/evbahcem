@@ -3,14 +3,12 @@ import React, { FocusEventHandler, useRef } from 'react';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setBlur, setSearchBarFocus } from '../slices/blurSlice';
 import CloseIcon from '@mui/icons-material/Close';
-import { setSearchQuery } from '../slices/searchSlice';
+import { setSearchQuery, setSourcePage } from '../slices/searchSlice';
 import { setNavbarRounded } from '../slices/stylingSlice';
-
-type Data = Array<Item>;
 
 type Item = {
 	title: string;
@@ -22,6 +20,7 @@ type SearchResultsState = {
 	search: {
 		searchResults: Array<Item>;
 		searchQuery: string;
+		sourcePage: string;
 	};
 };
 
@@ -32,10 +31,8 @@ type BlurState = {
 	};
 };
 
-type Event = {
-	relatedTarget: {
-		value: string;
-	};
+type Props = {
+	source: string;
 };
 
 type ContainerRef = any;
@@ -46,7 +43,9 @@ type StylingState = {
 	};
 };
 
-const FloatingNavbar = () => {
+const FloatingNavbar = ({ source }: Props) => {
+	const dispatch = useDispatch();
+	dispatch(setSourcePage(source));
 	const navbarRounded = useSelector(
 		(state: StylingState) => state.styling.navbarRounded
 	);
@@ -71,14 +70,17 @@ const FloatingNavbar = () => {
 	const searchBarHasFocus = useSelector(
 		(state: BlurState) => state.blur.searchBarHasFocus
 	);
-	const dispatch = useDispatch();
+
+	const sourcePage = useSelector(
+		(state: SearchResultsState) => state.search.sourcePage
+	);
 	useEffect(() => {
-		if (searchQuery && searchBarHasFocus) {
+		if (searchQuery && searchBarHasFocus && sourcePage === 'main') {
 			dispatch(setNavbarRounded(false));
 		} else {
 			dispatch(setNavbarRounded(true));
 		}
-	}, [searchQuery, dispatch, searchBarHasFocus]);
+	}, [searchQuery, dispatch, searchBarHasFocus, sourcePage]);
 
 	useEffect(() => {
 		// This function will be called when the component is unmounted
@@ -109,11 +111,13 @@ const FloatingNavbar = () => {
 					}}
 				/>
 			</nav>
-			<SearchResults
-				data={searchResults}
-				searchQuery={searchQuery}
-				searchBarHasFocus={searchBarHasFocus}
-			/>
+			{source === 'main' && (
+				<SearchResults
+					data={searchResults}
+					searchQuery={searchQuery}
+					searchBarHasFocus={searchBarHasFocus}
+				/>
+			)}
 		</div>
 	);
 };

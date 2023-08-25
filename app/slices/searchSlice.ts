@@ -6,6 +6,7 @@ export const searchResultsSlice = createSlice({
 	initialState: {
 		searchResults: [],
 		searchQuery: '',
+		sourcePage: '',
 	},
 	reducers: {
 		setSearchResults: (state, action) => {
@@ -14,10 +15,14 @@ export const searchResultsSlice = createSlice({
 		setSearchQuery: (state, action) => {
 			state.searchQuery = action.payload;
 		},
+		setSourcePage: (state, action) => {
+			state.sourcePage = action.payload;
+		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { setSearchResults, setSearchQuery } = searchResultsSlice.actions;
+export const { setSearchResults, setSearchQuery, setSourcePage } =
+	searchResultsSlice.actions;
 
 export default searchResultsSlice.reducer;

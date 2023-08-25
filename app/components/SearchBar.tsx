@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlur, setSearchBarFocus } from '../slices/blurSlice';
 import { setSearchResults, setSearchQuery } from '../slices/searchSlice';
+import { setNavbarRounded } from '../slices/stylingSlice';
 
 type Item = {
 	title: string;
@@ -24,6 +25,7 @@ type SearchResultsState = {
 	search: {
 		searchResults: Array<Item>;
 		searchQuery: string;
+		sourcePage: string;
 	};
 };
 
@@ -32,6 +34,10 @@ type BlurState = {
 		searchBarHasFocus: boolean;
 		isBlurred: boolean;
 	};
+};
+
+type Props = {
+	sourcePage: string;
 };
 
 const articles = rawArticles as {
@@ -45,9 +51,8 @@ const articles = rawArticles as {
 };
 
 const SearchBar = () => {
-	const filteredData = useSelector(
-		(state: SearchResultsState) => state.search.searchResults
-	);
+	const dispatch = useDispatch();
+
 	const searchQuery = useSelector(
 		(state: SearchResultsState) => state.search.searchQuery
 	);
@@ -55,7 +60,10 @@ const SearchBar = () => {
 		(state: BlurState) => state.blur.searchBarHasFocus
 	);
 
-	const dispatch = useDispatch();
+	const sourcePage = useSelector(
+		(state: SearchResultsState) => state.search.sourcePage
+	);
+
 	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
 		return {
 			index: String(index),
@@ -81,12 +89,35 @@ const SearchBar = () => {
 		if (searchBarHasFocus) {
 			dispatch(setBlur(true));
 		}
-		const fuse = new Fuse([...sicknessValues, ...articleValues], {
-			keys: ['title', 'entryParagraph'],
-			shouldSort: true,
-			includeScore: true,
-			threshold: 0.4, // You can adjust this value based on how strict you want the matching to be
-		});
+		if (sourcePage !== 'main') {
+			dispatch(setNavbarRounded(true));
+		}
+		let fuse;
+		switch (sourcePage) {
+			case 'articles':
+				fuse = new Fuse(articleValues, {
+					keys: ['title'],
+					shouldSort: true,
+					includeScore: true,
+					threshold: 0.4,
+				});
+				break;
+			case 'sicknesses':
+				fuse = new Fuse(sicknessValues, {
+					keys: ['title', 'entryParagraph'],
+					shouldSort: true,
+					includeScore: true,
+					threshold: 0.4,
+				});
+				break;
+			default:
+				fuse = new Fuse([...sicknessValues, ...articleValues], {
+					keys: ['title', 'entryParagraph'],
+					shouldSort: true,
+					includeScore: true,
+					threshold: 0.4,
+				});
+		}
 
 		const results = fuse.search(searchQuery.toLowerCase());
 		dispatch(
