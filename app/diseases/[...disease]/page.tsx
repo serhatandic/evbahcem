@@ -72,28 +72,56 @@ const DiseaseDetails = ({ params }: DiseaseDetailsParams) => {
 				</h2>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 					{randomKeys.map((key, idx) => (
-						<div key={idx} className='bg-orange-50 p-2'>
-							<a id={`${sicknesses[key].title}`}></a>
-							<h2 className='font-bold'>{`${sicknesses[key].title}`}</h2>
-							<p className=''>
-								{sicknesses[key].entryParagraph
-									.slice(0, 200)
-									.split(' ')
-									.slice(0, -1)
-									.join(' ') + ' ...'}
-							</p>
-
+						<div
+							key={idx}
+							className='bg-orange-50 p-2 flex flex-col justify-between'
+						>
+							<div>
+								<a id={`${sicknesses[key].title}`}></a>
+								<h2 className='font-bold'>{`${sicknesses[key].title}`}</h2>
+								<p className=''>
+									{sicknesses[key].entryParagraph
+										.slice(0, 200)
+										.split(' ')
+										.slice(0, -1)
+										.join(' ') + ' ...'}
+								</p>
+							</div>
 							<div className='flex justify-end'>
 								<Link
 									href={`/diseases/${key}/${sicknesses[
 										key
 									].title.replace(/\s/g, '-')}`}
 								>
-									<button>Read More</button>
+									<button className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 mr-2 my-2'>
+										Read More
+									</button>
 								</Link>
 							</div>
 						</div>
 					))}
+				</div>
+				<div className='flex justify-between pt-3 gap-3 flex-col sm:flex-row'>
+					<Link
+						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						href={'/diseases'}
+					>
+						<button className='flex justify-center text-center'>
+							Check Diseases
+						</button>
+					</Link>
+					<Link
+						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						href={`/`}
+					>
+						<button>Home</button>
+					</Link>
+					<Link
+						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						href={`/articles`}
+					>
+						<button>Check Other Articles</button>
+					</Link>
 				</div>
 			</div>
 		</div>
