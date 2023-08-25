@@ -70,33 +70,27 @@ const Article = ({ params }: ArticleParams) => {
 				</h2>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 					{randomKeys.map((key, idx) => (
-						<div
+						<Link
 							key={idx}
-							className='bg-orange-50 p-2 flex flex-col justify-between'
+							href={`/articles/${key}/${articles[
+								key
+							].title.replace(/\s/g, '-')}`}
 						>
-							<div>
-								<a id={`${articles[key].title}`}></a>
-								<h2 className='font-bold'>{`${articles[key].title}`}</h2>
-								<p className=''>
-									{articles[key].sections[0].content
-										.slice(0, 200)
-										.split(' ')
-										.slice(0, -1)
-										.join(' ') + ' ...'}
-								</p>
-							</div>
-							<div className='flex justify-end'>
-								<Link
-									href={`/articles/${key}/${articles[
-										key
-									].title.replace(/\s/g, '-')}`}
-								>
-									<button className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 mr-2 my-2'>
-										Read More
-									</button>
-								</Link>
-							</div>
-						</div>
+							<div className='bg-orange-50 p-2 flex flex-col justify-between'>
+								<div>
+									<a id={`${articles[key].title}`}></a>
+									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
+									<p className=''>
+										{articles[key].sections[0].content
+											.slice(0, 200)
+											.split(' ')
+											.slice(0, -1)
+											.join(' ') + ' ...'}
+									</p>
+								</div>
+								<div className='flex justify-end'></div>
+							</div>{' '}
+						</Link>
 					))}
 				</div>
 				<div className='flex justify-between pt-3 gap-3 flex-col sm:flex-row'>
