@@ -1,5 +1,5 @@
 'use client';
-import React, { FocusEventHandler, useRef } from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
