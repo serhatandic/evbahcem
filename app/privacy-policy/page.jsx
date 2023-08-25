@@ -56,7 +56,9 @@ const PrivacyPolicy = () => {
 			<p>
 				If you have any questions about this Privacy Policy, please
 				contact us at{' '}
-				<a href='mailto:belirti.org@gmail.com'>belirti.org@gmail.com</a>
+				<a href='mailto:healthcues.org@gmail.com'>
+					healthcues.org@gmail.com
+				</a>
 				.
 			</p>
 
