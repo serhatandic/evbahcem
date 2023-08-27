@@ -18,13 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html className='bg-orange-200' lang='en'>
-			<head>
-				<script
-					async
-					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7878828610260950'
-					crossOrigin='anonymous'
-				></script>
-			</head>
+			<head></head>
 			<body className={inter.className}>
 				<div className='bg-orange-200 text-gray-800 h-full'>
 					<Providers>{children}</Providers>
