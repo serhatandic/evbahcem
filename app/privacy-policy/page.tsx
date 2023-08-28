@@ -1,6 +1,6 @@
 const PrivacyPolicy = () => {
 	return (
-		<div className='p-12 md:px-36 lg:px-60 xl:px-80'>
+		<div className='p-12 md:px-36 lg:px-60 xl:px-80 h-screen'>
 			<h1 className='font-extrabold text-2xl'>Privacy Policy</h1>
 
 			<h2 className='font-bold text-lg'>Introduction</h2>
@@ -56,13 +56,13 @@ const PrivacyPolicy = () => {
 			<p>
 				If you have any questions about this Privacy Policy, please
 				contact us at{' '}
-				<a href='mailto:healthcues.org@gmail.com'>
-					healthcues.org@gmail.com
+				<a href='mailto:campingatwild@gmail.com'>
+					campingatwild@gmail.com
 				</a>
 				.
 			</p>
 
-			<p>Last updated: 23/08/2023</p>
+			<p>Last updated: 29/08/2023</p>
 		</div>
 	);
 };

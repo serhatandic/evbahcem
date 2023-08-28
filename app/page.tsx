@@ -4,6 +4,7 @@ import ShortPitch from './components/ShortPitch';
 import DiveInButtons from './components/DiveInButtons';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
+import Footer from './components/Footer';
 
 type BlurState = {
 	blur: {
