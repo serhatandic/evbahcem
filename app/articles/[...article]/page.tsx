@@ -42,7 +42,7 @@ const Article = ({ params }: ArticleParams) => {
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>
-				<p className='opacity-50 mt-2'>
+				<p className='opacity-80 mt-2 text-gray-800'>
 					{
 						readingTime(
 							articles[idx].sections
@@ -113,7 +113,7 @@ const Article = ({ params }: ArticleParams) => {
 											.join(' ') + ' ...'}
 									</p>
 								</div>
-								<div className='flex justify-start opacity-50'>
+								<div className='flex justify-start opacity-80 text-gray-800'>
 									{
 										readingTime(
 											articles[key].sections

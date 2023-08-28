@@ -26,7 +26,7 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 				</p>
 			</div>
 			<div className='flex  mt-8 justify-between items-end'>
-				<p className='opacity-25 text-xs'>
+				<p className='opacity-80 text-xs text-gray-800'>
 					{readingTime(wholeText).text}
 				</p>
 				<div className='flex justify-end mt-auto'>
