@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import rawArticles from '../../data/data.json';
 import Link from 'next/link';
+import readingTime from 'reading-time';
 
 type ArticleParams = {
 	params: {
@@ -41,6 +42,15 @@ const Article = ({ params }: ArticleParams) => {
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>
 				<h1 className='text-4xl font-bold'>{articles[idx].title}</h1>
+				<p className='opacity-50 mt-2'>
+					{
+						readingTime(
+							articles[idx].sections
+								.map((section) => section.content)
+								.join(' ')
+						).text
+					}
+				</p>
 				<div className='bg-orange-50 p-4 my-4'>
 					<h2 className='text-2xl'>Table of Contents</h2>
 					<div className='mb-4'>
@@ -74,7 +84,7 @@ const Article = ({ params }: ArticleParams) => {
 					))}
 				</div>
 			</div>
-			<div className='mt-4 bg-orange-100 p-8'>
+			<div className='mt-4 bg-orange-100 p-8  w-full'>
 				<h2 className='font-bold text-2xl mb-4'>
 					You might also want to read these
 				</h2>
@@ -86,7 +96,7 @@ const Article = ({ params }: ArticleParams) => {
 								key
 							].title.replace(/\s/g, '-')}`}
 						>
-							<div className='bg-orange-50 p-2 flex flex-col justify-between'>
+							<div className='bg-orange-50 p-4 h-60 flex flex-col justify-between rounded-lg'>
 								<div>
 									<div id={`${articles[key].title}`}></div>
 									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
@@ -98,28 +108,30 @@ const Article = ({ params }: ArticleParams) => {
 											.join(' ') + ' ...'}
 									</p>
 								</div>
-								<div className='flex justify-end'></div>
+								<div className='flex justify-start opacity-50'>
+									{
+										readingTime(
+											articles[key].sections
+												.map(
+													(section) => section.content
+												)
+												.join(' ')
+										).text
+									}
+								</div>
 							</div>
 						</Link>
 					))}
 				</div>
 				<div className='flex justify-between pt-3 gap-3 flex-col sm:flex-row'>
 					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
-						href={'/diseases'}
-					>
-						<button className='flex justify-center text-center'>
-							Check Diseases
-						</button>
-					</Link>
-					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-gray-800 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/`}
 					>
 						<button>Home</button>
 					</Link>
 					<Link
-						className='bg-orange-500 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
+						className='bg-gray-800 flex-1 text-white rounded-lg px-4 py-2 flex justify-center'
 						href={`/articles`}
 					>
 						<button>Check Other Articles</button>
