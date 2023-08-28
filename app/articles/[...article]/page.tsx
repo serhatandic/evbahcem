@@ -77,7 +77,7 @@ const Article = ({ params }: ArticleParams) => {
 					{articles[idx].sections.map((section, idx) => (
 						<div key={idx}>
 							<a id={`${section.header}`}></a>
-							<h3 className='text-2xl font-bold'>
+							<h3 className='text-2xl font-bold my-4'>
 								{section.header}
 							</h3>
 							<div
