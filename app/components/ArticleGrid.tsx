@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import ArticleCard from './ArticleCard';
-import rawArticles from '../data/saglikRehberi.json';
+import rawArticles from '../data/data.json';
 
 type SearchResultsState = {
 	search: {

@@ -104,7 +104,7 @@ const FloatingNavbar = ({ source }: Props) => {
 				}`}
 			>
 				<Link href='/'>
-					<h2 className='ml-4 font-medium'>Healthcues.org</h2>
+					<h2 className='ml-4 font-medium'>C@W.com</h2>
 				</Link>
 				<SearchBar />
 				<CloseIcon

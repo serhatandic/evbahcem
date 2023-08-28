@@ -5,12 +5,12 @@ type ShortPitchProps = {
 const ShortPitch = ({ className }: ShortPitchProps) => {
 	return (
 		<div className={className}>
-			<div className='self-center mt-14 sm:mt-36 font-bold text-7xl'>
-				Correct Cue, Healthy Life.
+			<div className='self-center mt-14 sm:mt-36 font-bold text-6xl'>
+				Unleash Adventure, Embrace Nature.
 			</div>
 			<div className='mt-8'>
-				Your Health Is Now In Your Hands: Shape Your Life with Diseases,
-				Symptoms, and Natural Treatment Methods!
+				Your Ultimate Outdoor Guide: Elevate Your Camping Experience
+				with Tips, Destinations, and Essential Gear!
 			</div>
 		</div>
 	);

@@ -2,7 +2,7 @@
 
 import Fuse from 'fuse.js';
 import sicknesses from '../data/data.json';
-import rawArticles from '../data/saglikRehberi.json';
+import rawArticles from '../data/data.json';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlur, setSearchBarFocus } from '../slices/blurSlice';

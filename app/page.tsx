@@ -15,7 +15,7 @@ export default function Home() {
 	const blur = useSelector((state: BlurState) => state.blur.isBlurred);
 	return (
 		<div className={`h-screen flex justify-center `}>
-			<div className='flex flex-col  w-9/12 md:w-6/12 lg:w-5/12 '>
+			<div className='flex flex-col w-9/12 md:w-6/12 lg:w-5/12 '>
 				<FloatingNavbar source={'main'} />
 				<ShortPitch className={`${blur ? 'blur-md' : 'blur-none'}`} />
 				<DiveInButtons

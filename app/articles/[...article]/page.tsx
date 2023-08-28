@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import rawArticles from '../../data/saglikRehberi.json';
+import rawArticles from '../../data/data.json';
 import Link from 'next/link';
 
 type ArticleParams = {

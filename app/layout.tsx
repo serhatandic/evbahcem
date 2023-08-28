@@ -6,9 +6,10 @@ import { Providers } from './components/Providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Healthcues.org - Your Guide to Healthy Living',
+	title: 'CampingAtWild.com - Your Ultimate Destination for Outdoor Adventure',
+
 	description:
-		'Healthcues.org, provides information about diseases, symptoms, and treatments. You can find the most common symptoms of diseases and information about their treatments.',
+		"Explore the great outdoors like never before with CampingAtWild.com. We offer tips, guides, and essentials for camping in untamed nature. From must-visit locations to how to camp safely, we've got you covered.",
 };
 
 export default function RootLayout({
