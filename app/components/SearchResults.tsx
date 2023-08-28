@@ -26,11 +26,7 @@ const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 							return (
 								<Link
 									key={item.title}
-									href={`${
-										item.source === 'sicknesses'
-											? 'diseases'
-											: 'articles'
-									}/${item.index}/${titleWithoutSpaces}`}
+									href={`articles/${item.index}/${titleWithoutSpaces}`}
 								>
 									<div className=' bg-white gap-2 border-b-2 p-2'>
 										{item.title}

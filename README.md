@@ -1,1 +1,1 @@
-Diseases guideline
+Camping guideline

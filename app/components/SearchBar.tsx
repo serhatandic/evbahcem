@@ -1,8 +1,7 @@
 'use client';
 
 import Fuse from 'fuse.js';
-import sicknesses from '../data/data.json';
-import rawArticles from '../data/data.json';
+import data from '../data/data.json';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlur, setSearchBarFocus } from '../slices/blurSlice';
@@ -36,13 +35,10 @@ type BlurState = {
 	};
 };
 
-type Props = {
-	sourcePage: string;
-};
-
-const articles = rawArticles as {
+const articles = data as {
 	[key: string]: {
 		title: string;
+		entryParagraph: string;
 		sections: Array<{
 			header: string;
 			content: string;
@@ -64,14 +60,6 @@ const SearchBar = () => {
 		(state: SearchResultsState) => state.search.sourcePage
 	);
 
-	const sicknessValues = Object.values(sicknesses).map((sickness, index) => {
-		return {
-			index: String(index),
-			title: sickness.title,
-			entryParagraph: sickness.entryParagraph,
-			source: 'sicknesses',
-		};
-	});
 	const articleValues = Object.keys(articles).map((key) => {
 		return {
 			index: key,
@@ -92,32 +80,13 @@ const SearchBar = () => {
 		if (sourcePage !== 'main') {
 			dispatch(setNavbarRounded(true));
 		}
-		let fuse;
-		switch (sourcePage) {
-			case 'articles':
-				fuse = new Fuse(articleValues, {
-					keys: ['title'],
-					shouldSort: true,
-					includeScore: true,
-					threshold: 0.4,
-				});
-				break;
-			case 'sicknesses':
-				fuse = new Fuse(sicknessValues, {
-					keys: ['title', 'entryParagraph'],
-					shouldSort: true,
-					includeScore: true,
-					threshold: 0.4,
-				});
-				break;
-			default:
-				fuse = new Fuse([...sicknessValues, ...articleValues], {
-					keys: ['title', 'entryParagraph'],
-					shouldSort: true,
-					includeScore: true,
-					threshold: 0.4,
-				});
-		}
+
+		const fuse = new Fuse(articleValues, {
+			keys: ['title', 'entryParagraph'],
+			shouldSort: true,
+			includeScore: true,
+			threshold: 0.4,
+		});
 
 		const results = fuse.search(searchQuery.toLowerCase());
 		dispatch(
