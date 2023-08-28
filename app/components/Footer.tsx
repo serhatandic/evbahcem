@@ -8,9 +8,9 @@ const Footer = () => {
 					<Link href='/privacy-policy'>
 						<p className='text-xs'>Privacy Policy</p>
 					</Link>
-					<Link href='/terms-of-service'>
+					{/* <Link href='/terms-of-service'>
 						<p className='text-xs'>Terms of Service</p>
-					</Link>
+					</Link> */}
 					<Link href='/about'>
 						<p className='text-xs'>About</p>
 					</Link>
