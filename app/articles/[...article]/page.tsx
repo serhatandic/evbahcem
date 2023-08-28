@@ -101,7 +101,7 @@ const Article = ({ params }: ArticleParams) => {
 								key
 							].title.replace(/\s/g, '-')}`}
 						>
-							<div className='bg-orange-50 p-4 h-96  flex flex-col justify-between rounded-lg'>
+							<div className='bg-orange-50 p-4 flex flex-col justify-between rounded-lg'>
 								<div>
 									<div id={`${articles[key].title}`}></div>
 									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
