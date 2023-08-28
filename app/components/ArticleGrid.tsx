@@ -54,7 +54,6 @@ const ArticleGrid = () => {
 		? itemsFromSearchResults
 		: Object.values(articles)
 				.slice(0, sliceEnd)
-				.reverse()
 				.map((article, id) => (
 					<ArticleCard key={id} article={article} id={id} />
 				));

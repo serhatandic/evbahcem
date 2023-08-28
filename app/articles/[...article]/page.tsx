@@ -13,6 +13,7 @@ type ArticleParams = {
 const articles = rawArticles as {
 	[key: string]: {
 		title: string;
+		entryParagraph: string;
 		sections: Array<{
 			header: string;
 			content: string;
@@ -41,7 +42,6 @@ const Article = ({ params }: ArticleParams) => {
 	return (
 		<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 			<div className='bg-orange-100 p-8'>
-				<h1 className='text-4xl font-bold'>{articles[idx].title}</h1>
 				<p className='opacity-50 mt-2'>
 					{
 						readingTime(
@@ -51,6 +51,10 @@ const Article = ({ params }: ArticleParams) => {
 						).text
 					}
 				</p>
+				<h1 className='text-4xl font-bold'>{articles[idx].title}</h1>
+
+				<p className='my-2'>{articles[idx].entryParagraph}</p>
+
 				<div className='bg-orange-50 p-4 my-4'>
 					<h2 className='text-2xl'>Table of Contents</h2>
 					<div className='mb-4'>
@@ -68,6 +72,7 @@ const Article = ({ params }: ArticleParams) => {
 						</ul>
 					</div>
 				</div>
+
 				<div>
 					{articles[idx].sections.map((section, idx) => (
 						<div key={idx}>
@@ -96,7 +101,7 @@ const Article = ({ params }: ArticleParams) => {
 								key
 							].title.replace(/\s/g, '-')}`}
 						>
-							<div className='bg-orange-50 p-4 h-60 flex flex-col justify-between rounded-lg'>
+							<div className='bg-orange-50 p-4 h-96  flex flex-col justify-between rounded-lg'>
 								<div>
 									<div id={`${articles[key].title}`}></div>
 									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
