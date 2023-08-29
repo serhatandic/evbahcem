@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<div className='relative bottom-0 w-full'>
+		<div className='relative bottom-0 w-full '>
 			<div className='flex flex-col items-center justify-center bg-gray-800 text-white p-8'>
 				<div className='flex items-center justify-center gap-4'>
 					<Link href='/privacy-policy'>
