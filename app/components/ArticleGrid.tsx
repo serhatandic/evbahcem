@@ -50,12 +50,18 @@ const ArticleGrid = () => {
 	);
 
 	const [sliceEnd, setSliceEnd] = useState(12);
+	const articlesArray = Object.values(articles);
 	const partToBeShown = searchQuery
 		? itemsFromSearchResults
-		: Object.values(articles)
+		: articlesArray
+				.reverse()
 				.slice(0, sliceEnd)
 				.map((article, id) => (
-					<ArticleCard key={id} article={article} id={id} />
+					<ArticleCard
+						key={articlesArray.length - id - 1}
+						article={article}
+						id={articlesArray.length - id - 1}
+					/>
 				));
 	return (
 		<InfiniteScroll
