@@ -161,20 +161,6 @@ const Article = ({ params }: ArticleParams) => {
 						</Link>
 					))}
 				</div>
-				<div className='flex justify-end pt-3 gap-3 flex-col sm:flex-row '>
-					<Link
-						className='bg-orange-50 flex-shrink text-gray-800 rounded-lg px-4 py-2 flex justify-center'
-						href={`/`}
-					>
-						<button>Home</button>
-					</Link>
-					<Link
-						className='bg-orange-50 flex-shrink text-gray-800 rounded-lg px-4 py-2 flex justify-center'
-						href={`/articles`}
-					>
-						<button>Check Other Articles</button>
-					</Link>
-				</div>
 			</div>
 		</>
 	);
