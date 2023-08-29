@@ -21,8 +21,10 @@ export default function RootLayout({
 	return (
 		<html className='bg-orange-200' lang='en'>
 			<head></head>
-			<body className={inter.className}>
-				<div className='bg-orange-200 text-gray-800 h-full'>
+			<body
+				className={`${inter.className} flex flex-col justify-between`}
+			>
+				<div className='bg-orange-200 text-gray-800 h-full min-h-screen'>
 					<Providers>{children}</Providers>
 				</div>
 				<Footer />
