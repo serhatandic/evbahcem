@@ -15,6 +15,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: '2023-08-30T13:52:26+00:00',
 		},
 		{
+			url: 'https://campingatwild.com/terms-of-service',
+			lastModified: '2023-08-30T22:18:26+00:00',
+		},
+		{
+			url: 'https://campingatwild.com/contact',
+			lastModified: '2023-08-30T22:18:26+00:00',
+		},
+		{
 			url: 'https://campingatwild.com/about',
 			lastModified: '2023-08-30T13:52:26+00:00',
 		},
