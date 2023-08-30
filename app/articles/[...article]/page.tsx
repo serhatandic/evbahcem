@@ -54,7 +54,7 @@ const Article = ({ params }: ArticleParams) => {
 							height={50}
 						/>
 						<div className='flex flex-col gap-2'>
-							<p className='flex items-start flex-col'>
+							<div className='flex items-start flex-col'>
 								<span className='text-gray-800 opacity-80 text-sm md:text-base lg:text-lg'>
 									Written by camping expert{' '}
 									<Link href={'/about'}>
@@ -72,7 +72,7 @@ const Article = ({ params }: ArticleParams) => {
 										).text
 									}
 								</p>
-							</p>
+							</div>
 						</div>
 					</div>
 					<h1 className='text-4xl font-bold mb-2'>
