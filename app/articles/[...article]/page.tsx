@@ -45,18 +45,37 @@ const Article = ({ params }: ArticleParams) => {
 		<>
 			<div className='p-8 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
-					<p className='opacity-80 mt-2 text-gray-800'>
-						{
-							readingTime(
-								articles[idx].sections
-									.map((section) => section.content)
-									.join(' ')
-							).text
-						}
-					</p>
+					<div className='flex gap-2 items-center mb-2'>
+						<p className='flex items-center gap-2'>
+							<Image
+								className='rounded-full'
+								src={'/author.png'}
+								alt='author'
+								width={40}
+								height={40}
+							/>
+							<span className='text-gray-800 opacity-80'>
+								Written by camping expert{' '}
+								<Link href={'/about'}>
+									<strong>Archibald Whitney</strong>
+								</Link>
+							</span>
+						</p>
+						<span>/</span>
+						<p className='opacity-80 text-gray-800 font-normal'>
+							{
+								readingTime(
+									articles[idx].sections
+										.map((section) => section.content)
+										.join(' ')
+								).text
+							}
+						</p>
+					</div>
 					<h1 className='text-4xl font-bold mb-2'>
 						{articles[idx].title}
 					</h1>
+
 					{articles[idx]?.entryImage && (
 						<Image
 							className='self-center'

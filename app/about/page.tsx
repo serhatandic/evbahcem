@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import authorPic from './ author.png';
 
 const AboutPage = () => {
 	return (
@@ -9,7 +8,7 @@ const AboutPage = () => {
 				<div className='flex flex-col md:flex-row gap-4 mt-8 items-center'>
 					<Image
 						alt='Picture of the author'
-						src={authorPic}
+						src={'/author.png'}
 						width={168.9}
 						height={167.6}
 						className='rounded-full'
