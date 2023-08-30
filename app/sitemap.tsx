@@ -27,6 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: '2023-08-30T13:52:26+00:00',
 		},
 		{
+			url: 'https://campingatwild.com/articles/26/Unveiling-the-Best-Camping-Locations-Near-Waterbury,-Connecticut',
+			lastModified: '2023-08-30T13:52:26+00:00',
+		},
+		{
 			url: 'https://campingatwild.com/articles/25/Discover-The-Best-Camping-Locations-Near-Henderson,-Nevada',
 			lastModified: '2023-08-30T13:52:26+00:00',
 		},
