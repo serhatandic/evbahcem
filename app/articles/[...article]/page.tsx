@@ -4,6 +4,7 @@ import rawArticles from '../../data/data.json';
 import Link from 'next/link';
 import readingTime from 'reading-time';
 import Image from 'next/image';
+import ReferenceTag from '@/app/components/ReferenceTag';
 
 type ArticleParams = {
 	params: {
@@ -16,6 +17,10 @@ const articles = rawArticles as {
 		title: string;
 		entryParagraph: string;
 		entryImage: string;
+		references: Array<{
+			title: string;
+			url: string;
+		}>;
 		sections: Array<{
 			header: string;
 			image: string;
@@ -141,6 +146,19 @@ const Article = ({ params }: ArticleParams) => {
 								/>
 							</div>
 						))}
+						<div className='mb-4'></div>
+						<div className='flex gap-2 flex-wrap'>
+							{articles[idx].references.map((item) => {
+								if (!item.url) return null;
+								return (
+									<ReferenceTag
+										key={item.title}
+										title={item.title}
+										url={item.url}
+									/>
+								);
+							})}
+						</div>
 					</div>
 				</div>
 			</div>

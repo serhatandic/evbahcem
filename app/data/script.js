@@ -3,11 +3,12 @@ const fs = require('fs');
 // Function to add the 'image' property to each section
 const addImageProperty = (data) => {
 	for (let entry of Object.values(data)) {
-		if (entry.sections) {
-			for (let section of entry.sections) {
-				section.image = '';
-			}
-		}
+		entry.wikipedia = [
+			{
+				title: '',
+				url: '',
+			},
+		];
 	}
 	return data;
 };
