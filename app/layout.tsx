@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	title: 'CampingAtWild.com - Your Ultimate Destination for Outdoor Adventure',
 
 	description:
-		"Explore the great outdoors like never before with CampingAtWild.com. We offer tips, guides, and essentials for camping in untamed nature. From must-visit locations to how to camp safely, we've got you covered.",
+		'Expert-authored camping guides covering destinations, gear, and outdoor survival. Your ultimate resource for adventurous living.',
 };
 
 export default function RootLayout({
