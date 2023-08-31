@@ -12,8 +12,21 @@ type ArticleCardProps = {
 	};
 };
 
+const createURLFriendlyString = (str: string) => {
+	// Remove special characters and replace with space
+	const cleanedString = str.replace(/[^a-zA-Z0-9 ]/g, ' ');
+
+	// Trim any leading or trailing spaces and replace spaces with hyphens
+	const urlFriendlyString = cleanedString
+		.trim()
+		.replace(/\s+/g, '-')
+		.toLowerCase();
+
+	return urlFriendlyString;
+};
+
 const ArticleCard = ({ article, id }: ArticleCardProps) => {
-	const titleWithoutSpaces = article.title.replace(/\s/g, '-');
+	const titleWithoutSpecials = createURLFriendlyString(article.title);
 	const wholeText = article.sections
 		.map((section) => section.content)
 		.join(' ');
@@ -32,7 +45,7 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 				<div className='flex justify-end mt-auto'>
 					<Link
 						className='bg-gray-800 text-white rounded-lg px-4 py-2 mt-2'
-						href={`articles/${id}/${titleWithoutSpaces}`}
+						href={`articles/${id}/${titleWithoutSpecials}`}
 					>
 						<button>Details</button>
 					</Link>
