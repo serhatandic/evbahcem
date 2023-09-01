@@ -5,6 +5,7 @@ import Link from 'next/link';
 import readingTime from 'reading-time';
 import Image from 'next/image';
 import ReferenceTag from '@/app/components/ReferenceTag';
+import Head from 'next/head';
 
 type ArticleParams = {
 	params: {
@@ -48,6 +49,14 @@ const Article = ({ params }: ArticleParams) => {
 
 	return (
 		<>
+			<Head>
+				<title>{articles[idx].title}</title>
+				<meta name='title' content={articles[idx].title} />
+				<meta
+					name='description'
+					content={articles[idx].entryParagraph}
+				/>
+			</Head>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
 					<div className='flex gap-2 items-center md:items-center mb-2'>
