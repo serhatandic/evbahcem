@@ -1,15 +1,12 @@
-import Head from 'next/head';
+export const metadata = {
+	title: 'Contact',
+	description:
+		'Have questions about camping or outdoor adventures? Reach out to Archibald for personalized advice and guidance.',
+};
 
 const Contact = () => {
 	return (
 		<>
-			<Head>
-				<title>Contact</title>
-				<meta
-					name='description'
-					content='Have questions about camping or outdoor adventures? Reach out to Archibald for personalized advice and guidance.'
-				/>
-			</Head>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
 					<h1 className='text-2xl font-bold'>Contact Us</h1>

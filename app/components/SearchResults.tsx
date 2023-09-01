@@ -1,4 +1,6 @@
+import { create } from 'domain';
 import Link from 'next/link';
+import { createURLFriendlyString } from '../utils/createUrlFriendlyString';
 
 type Props = {
 	data: Array<Item>;
@@ -19,14 +21,13 @@ const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 				<div className='absolute top-16 w-9/12 md:w-6/12 lg:w-5/12 z-10'>
 					{data.length ? (
 						data.slice(0, 3)?.map((item: Item) => {
-							const titleWithoutSpaces = item.title.replace(
-								/\s/g,
-								'-'
-							);
+							const titleWithoutSpecials =
+								createURLFriendlyString(item.title);
+
 							return (
 								<Link
 									key={item.title}
-									href={`articles/${item.index}/${titleWithoutSpaces}`}
+									href={`articles/${item.index}/${titleWithoutSpecials}`}
 								>
 									<div className=' bg-white gap-2 border-b-2 p-2'>
 										{item.title}

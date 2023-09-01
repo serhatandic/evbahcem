@@ -1,16 +1,13 @@
-import Head from 'next/head';
 import Image from 'next/image';
+export const metadata = {
+	title: 'About',
+	description:
+		'Learn more about Archibald, a seasoned camper with 20 years of experience. Get to know his passion for the great outdoors.',
+};
 
 const AboutPage = () => {
 	return (
 		<>
-			<Head>
-				<title>About</title>
-				<meta
-					name='description'
-					content='Learn more about Archibald, a seasoned camper with 20 years of experience. Get to know his passion for the great outdoors.'
-				/>
-			</Head>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
 					<h1 className='text-4xl font-bold'>Who am i ?</h1>

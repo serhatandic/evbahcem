@@ -1,15 +1,12 @@
-import Head from 'next/head';
+export const metadata = {
+	title: 'Terms of Service',
+	description:
+		"Learn about the Terms of Service governing the use of Archibald's Camping Blog. Know your rights and responsibilities while using the website.",
+};
 
 const TermsOfService = () => {
 	return (
 		<>
-			<Head>
-				<title>Terms of Service</title>
-				<meta
-					name='description'
-					content="Learn about the Terms of Service governing the use of Archibald's Camping Blog. Know your rights and responsibilities while using the website."
-				/>
-			</Head>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
 					<h1 className='text-2xl font-bold'>

@@ -1,11 +1,12 @@
-'use client';
-import { useEffect, useState } from 'react';
+import { Metadata, ResolvingMetadata } from 'next';
 import rawArticles from '../../data/data.json';
 import Link from 'next/link';
 import readingTime from 'reading-time';
 import Image from 'next/image';
 import ReferenceTag from '@/app/components/ReferenceTag';
 import Head from 'next/head';
+import ArticleRecommendations from '@/app/components/ArticleRecommendations';
+import { createURLFriendlyString } from '@/app/utils/createUrlFriendlyString';
 
 type ArticleParams = {
 	params: {
@@ -30,22 +31,38 @@ const articles = rawArticles as {
 	};
 };
 
-const Article = ({ params }: ArticleParams) => {
-	const [randomKeys, setRandomKeys] = useState<string[]>([]);
-
+export async function generateMetadata(
+	{ params }: ArticleParams,
+	parent: ResolvingMetadata
+): Promise<Metadata> {
 	const idx = params.article[0];
-	const keys = Object.keys(articles).filter(
-		(_, index) => index !== Number(idx)
-	);
-	useEffect(() => {
-		setRandomKeys(
-			Array.from(
-				{ length: 4 },
-				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
-			)
-		);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [idx]);
+	const article = articles[idx];
+	const title = article.title;
+	const titleWithoutSpecials = createURLFriendlyString(title);
+	const description = article.entryParagraph;
+	const image = article.entryImage;
+	const url = `https://campingatwild.com/articles/${idx}/${titleWithoutSpecials}`;
+	const metadata: Metadata = {
+		title,
+		description,
+		metadataBase: new URL(url),
+		openGraph: {
+			title,
+			description,
+			images: [
+				{
+					url: image,
+					alt: image.split('/').slice(-1)[0].split('.')[0],
+				},
+			],
+			url,
+		},
+	};
+	return metadata;
+}
+
+const Article = ({ params }: ArticleParams) => {
+	const idx = params.article[0];
 
 	return (
 		<>
@@ -174,41 +191,7 @@ const Article = ({ params }: ArticleParams) => {
 				<h2 className='font-bold text-2xl mb-4 text-orange-50'>
 					You might also want to read these
 				</h2>
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-					{randomKeys.map((key, idx) => (
-						<Link
-							key={idx}
-							href={`/articles/${key}/${articles[
-								key
-							].title.replace(/\s/g, '-')}`}
-						>
-							<div className='bg-orange-50 p-4 flex flex-col justify-between rounded-lg h-full'>
-								<div>
-									<div id={`${articles[key].title}`}></div>
-									<h2 className='font-bold'>{`${articles[key].title}`}</h2>
-									<p className=''>
-										{articles[key].sections[0].content
-											.slice(0, 200)
-											.split(' ')
-											.slice(0, -1)
-											.join(' ') + ' ...'}
-									</p>
-								</div>
-								<div className='flex justify-start opacity-80 text-gray-800'>
-									{
-										readingTime(
-											articles[key].sections
-												.map(
-													(section) => section.content
-												)
-												.join(' ')
-										).text
-									}
-								</div>
-							</div>
-						</Link>
-					))}
-				</div>
+				<ArticleRecommendations idx={idx} articles={articles} />
 			</div>
 		</>
 	);

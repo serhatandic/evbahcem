@@ -1,15 +1,12 @@
-import Head from 'next/head';
+export const metadata = {
+	title: 'Privacy Policy',
+	description:
+		'Read our Privacy Policy to understand how Archibalds Camping Blog collects, uses, and protects your personal information.',
+};
 
 const PrivacyPolicy = () => {
 	return (
 		<>
-			<Head>
-				<title>Privacy Policy</title>
-				<meta
-					name='description'
-					content="Read our Privacy Policy to understand how Archibald's Camping Blog collects, uses, and protects your personal information."
-				/>
-			</Head>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-orange-100 p-8'>
 					<h1 className='font-bold text-2xl'>Privacy Policy</h1>
