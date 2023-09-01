@@ -51,7 +51,6 @@ const Article = ({ params }: ArticleParams) => {
 		<>
 			<Head>
 				<title>{articles[idx].title}</title>
-				<meta name='title' content={articles[idx].title} />
 				<meta
 					name='description'
 					content={articles[idx].entryParagraph}
