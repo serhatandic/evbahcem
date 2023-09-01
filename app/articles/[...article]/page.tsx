@@ -40,7 +40,8 @@ export async function generateMetadata(
 	const title = article.title;
 	const titleWithoutSpecials = createURLFriendlyString(title);
 	const description = article.entryParagraph;
-	const image = article.entryImage;
+	const imageRelative = article.entryImage;
+	const imageUrl = new URL(`https://campingatwild.com${imageRelative}`);
 	const url = `https://campingatwild.com/articles/${idx}/${titleWithoutSpecials}`;
 	const metadata: Metadata = {
 		title,
@@ -51,8 +52,8 @@ export async function generateMetadata(
 			description,
 			images: [
 				{
-					url: image,
-					alt: image.split('/').slice(-1)[0].split('.')[0],
+					url: imageUrl,
+					alt: imageRelative.split('/').slice(-1)[0].split('.')[0],
 				},
 			],
 			url,
