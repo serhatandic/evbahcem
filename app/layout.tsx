@@ -21,7 +21,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html className='bg-orange-200' lang='en'>
-			<head></head>
+			<head>
+				<script
+					async
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7878828610260950'
+					crossOrigin='anonymous'
+				></script>
+			</head>
 			<body
 				className={`${inter.className} flex flex-col justify-between`}
 			>
