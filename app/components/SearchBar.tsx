@@ -64,6 +64,7 @@ const SearchBar = () => {
 		return {
 			index: key,
 			title: articles[key].title,
+			entryParagraph: articles[key].entryParagraph,
 			source: 'articles',
 		};
 	});
@@ -85,7 +86,7 @@ const SearchBar = () => {
 			keys: ['title', 'entryParagraph'],
 			shouldSort: true,
 			includeScore: true,
-			threshold: 0.4,
+			threshold: 0.55,
 		});
 
 		const results = fuse.search(searchQuery.toLowerCase());
