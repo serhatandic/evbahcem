@@ -52,32 +52,35 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 					)}`}
 				>
 					<div className='bg-orange-50 p-4 flex flex-col justify-between rounded-lg h-full'>
+						<Image
+							className=''
+							src={articles[key].entryImage}
+							alt={articles[key].entryImage.split('/').pop()!}
+							width={1920}
+							height={1080}
+						/>
 						<div>
-							<div id={`${articles[key].title}`}></div>
-							<Image
-								className=''
-								src={articles[key].entryImage}
-								alt={articles[key].entryImage.split('/').pop()!}
-								width={1920}
-								height={1080}
-							/>
-							<h2 className='font-bold'>{`${articles[key].title}`}</h2>
-							<p className=''>
-								{articles[key].sections[0].content
-									.slice(0, 220)
-									.split(' ')
-									.slice(0, -1)
-									.join(' ') + ' ...'}
-							</p>
-						</div>
-						<div className='flex justify-start opacity-80 text-gray-800'>
-							{
-								readingTime(
-									articles[key].sections
-										.map((section) => section.content)
-										.join(' ')
-								).text
-							}
+							<div>
+								<div id={`${articles[key].title}`}></div>
+
+								<h2 className='font-bold'>{`${articles[key].title}`}</h2>
+								<p className=''>
+									{articles[key].sections[0].content
+										.slice(0, 220)
+										.split(' ')
+										.slice(0, -1)
+										.join(' ') + ' ...'}
+								</p>
+							</div>
+							<div className='flex justify-start opacity-80 text-gray-800'>
+								{
+									readingTime(
+										articles[key].sections
+											.map((section) => section.content)
+											.join(' ')
+									).text
+								}
+							</div>
 						</div>
 					</div>
 				</Link>
