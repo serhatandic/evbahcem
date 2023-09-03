@@ -126,7 +126,7 @@ const Article = ({ params }: ArticleParams) => {
 					)}
 					<p className='my-2'>{articles[idx].entryParagraph}</p>
 
-					<div className='bg-orange-50 p-4 my-4'>
+					<div className='bg-gray-800 p-4 my-4 text-orange-50'>
 						<h2 className='text-2xl'>Table of Contents</h2>
 						<div className='mb-4'>
 							<ul>
