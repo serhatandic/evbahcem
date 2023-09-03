@@ -234,12 +234,12 @@
 	"4": {
 		"title": "The Ultimate Camping Checklist: Everything You Need for an Amazing Adventure",
 		"entryParagraph": "Hey future camper! Are you buzzing with excitement about your upcoming camping trip? Camping is an awesome way to explore nature and have some fun. But wait, before you race off to the woods or the beach, let's make sure you're fully prepared. Here's the super-duper ultimate camping checklist, designed to help you pack all the essentials and some cool extras.",
-		"entryImage": "/4/camping-checklist.avif",
+		"entryImage": "/4/camping-checklist.jpg",
 		"sections": [
 			{
 				"header": "The Basics: Your Home in the Woods",
 				"content": "First up, let's talk about the basics. These are the things that'll be your home away from home. A good quality tent is a must, and make sure it's got enough room for everyone going on the trip. Pair that tent with a cozy sleeping bag, and you'll be sleeping like a log. For even more comfort, don't forget a sleeping pad or an inflatable mattress. And if you really want to feel at home, bring along some fluffy pillows and soft blankets.",
-				"image": "/4/sleeping-bags.webp"
+				"image": "/4/sleeping-bags.jpg"
 			},
 			{
 				"header": "Clothing: Dressing for Adventure",
@@ -259,12 +259,12 @@
 			{
 				"header": "Fun and Games: Keeping the Good Times Rolling",
 				"content": "Ok, let's bring the fun back into camping! You're not just going to sit around, right? Pack some fun games like frisbees, a deck of cards, or a football. These activities will keep everyone entertained. A camera or a smartphone is great for capturing those 'wow' moments. If you love storytelling, prepare some tales for the campfire. And speaking of campfires, don't forget marshmallows, chocolate, and graham crackers for the ultimate s'mores experience!",
-				"image": "/4/board-game.jpeg"
+				"image": "/4/board-game.jpg"
 			},
 			{
 				"header": "Extra Handy Items: The Little Things That Make a Big Difference",
 				"content": "There are some smaller items that you'll be really glad you packed. A multi-tool or Swiss Army knife is the superhero of camping gear. Bring along some trash bags to keep your campsite tidy, and maybe even some biodegradable soap for cleaning. Ropes can be used for hanging wet clothes or securing your tent. Duct tape fixes almost anything, and zip-lock bags can keep your stuff dry or hold leftovers. Trust us, these extras are lifesavers.",
-				"image": "/4/swiss-knife.jpeg"
+				"image": "/4/swiss-knife.jpg"
 			},
 			{
 				"header": "Being One with Nature: The Camper's Code",
@@ -340,42 +340,42 @@
 	"6": {
 		"title": "10 Must-Have Gadgets for Your Next Camping Adventure",
 		"entryParagraph": "Embarking on a camping adventure is a thrilling endeavor that offers both excitement and challenges. It is essential to be adequately prepared in order to fully enjoy the experience. One way to ensure a successful camping trip is to equip yourself with certain indispensable gadgets. In this comprehensive guide, we will explore 10 must-have gadgets that will contribute to a fulfilling and memorable camping adventure.",
-		"entryImage": "/6/camping-area.jpeg",
+		"entryImage": "/6/camping-area.jpg",
 		"sections": [
 			{
 				"header": "1. Solar-Powered Charger",
 				"content": "In this digital age, staying connected is often crucial, even when you're surrounded by nature. Imagine if your mobile device runs out of power while you're away from civilization. A solar-powered charger addresses this issue by harnessing energy from the sun to recharge your gadgets. This ensures you can make emergency calls and even take those Instagram-worthy pictures without worry.",
-				"image": "/6/solar-charger.jpeg"
+				"image": "/6/solar-charger.jpg"
 			},
 			{
 				"header": "2. Portable Water Filter",
 				"content": "Access to clean water is paramount for any camper. While you may be surrounded by bodies of water like rivers and lakes, it's not advisable to consume this water without proper treatment. A portable water filter provides a convenient solution for this, transforming available water sources into safe, drinkable water. This gadget is lightweight and compact, easily fitting into your camping gear.",
-				"image": "/6/portable-water-filter.jpeg"
+				"image": "/6/portable-water-filter.jpg"
 			},
 			{
 				"header": "3. Inflatable Solar Lantern",
 				"content": "Illuminating your camping area is vital for safety and convenience, especially when night falls. An inflatable solar lantern is an excellent tool for this purpose. During the daytime, it absorbs solar energy, and when darkness descends, it emits a bright light to illuminate your surroundings. It's both eco-friendly and space-saving, as it can be deflated for easy storage.",
-				"image": "/6/solar-lantern.jpeg"
+				"image": "/6/solar-lantern.jpg"
 			},
 			{
 				"header": "4. Multi-Tool Kit",
 				"content": "Camping often involves a myriad of small but essential tasks, from cutting rope to tightening screws. A multi-tool kit serves as an all-in-one solution for such needs. Often including features like a pair of scissors, a screwdriver, a knife, and sometimes even a small saw, this versatile gadget is a must-have for any camper, novice or experienced.",
-				"image": "/6/multi-tool-kit.jpeg"
+				"image": "/6/multi-tool-kit.jpg"
 			},
 			{
 				"header": "5. Fire Starter Kit",
 				"content": "The ability to quickly and efficiently start a fire is vital for cooking and warmth. While traditional methods like matches and lighters are options, a dedicated fire starter kit offers a more reliable solution. These kits often include flint and steel or magnesium rods that produce sparks, ensuring you can initiate a fire even in damp conditions.",
-				"image": "/6/fire-starter-kit.jpeg"
+				"image": "/6/fire-starter-kit.jpg"
 			},
 			{
 				"header": "6. Portable Camping Stove",
 				"content": "While cooking over an open fire has its charms, it's not always the most practical option. A portable camping stove provides a convenient, controlled way to cook meals. These stoves are designed to be compact and lightweight, making them easy to transport. Moreover, they offer quick and even cooking, ensuring your meals are as tasty as they are nutritious.",
-				"image": "/6/camping-stove.webp"
+				"image": "/6/camping-stove.jpg"
 			},
 			{
 				"header": "7. Wildlife Camera",
 				"content": "Nature is teeming with life, much of which becomes active when humans are asleep. A wildlife camera allows you to capture photographs and videos of animals that wander near your campsite during the night. This adds an educational and entertaining aspect to your camping adventure, providing insight into the nocturnal activities of the surrounding wildlife.",
-				"image": "/6/wildlife-camera.jpeg"
+				"image": "/6/wildlife-camera.jpg"
 			},
 			{
 				"header": "8. Thermal Blanket",
@@ -385,12 +385,12 @@
 			{
 				"header": "9. Weather-Resistant Tent",
 				"content": "Your tent serves as your temporary home while camping, and choosing a weather-resistant model is crucial for your comfort and safety. These specialized tents are designed to offer protection against various elements, such as rain, wind, and sun. They also feature superior ventilation systems, ensuring a comfortable environment within the tent.",
-				"image": "/6/water-resistant-tent.webp"
+				"image": "/6/water-resistant-tent.jpg"
 			},
 			{
 				"header": "10. GPS Watch",
 				"content": "Navigational skills are important when venturing into the wilderness, but even the most experienced campers can lose their bearings. A GPS watch serves as a modern-day compass and much more. It not only shows your current location but also tracks how far you've walked, monitors your heart rate, and can even guide you back to your starting point. It’s an indispensable tool for both safety and exploration.",
-				"image": "/6/gps-watch.jpeg"
+				"image": "/6/gps-watch.jpg"
 			}
 		],
 		"references": [
