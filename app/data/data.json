@@ -161,7 +161,7 @@
 	"3": {
 		"title": "Essentials To Take With You When Hitting The Road",
 		"entryParagraph": "When you are hitting the road by vehicle... whether by hitchhiking, biking, motorcycling, with a caravan, your own car, or public transport, the items you should carry with you may vary. However, there are some fundamental pieces of equipment you should never leave behind. The duration of your journey, your route, accommodation, and activity plans will determine whether you need a small backpack or a large suitcase full of items. So what should you take with you when hitting the road?",
-		"entryImage": "/3/journey-beginning.webp",
+		"entryImage": "/3/journey-beginning.jpg",
 		"sections": [
 			{
 				"header": "Essentials To Take With You When Hitting The Road",
@@ -186,7 +186,7 @@
 			{
 				"header": "Emergency Supplies",
 				"content": "Make sure you have a first aid kit, fire extinguisher, reflector, lug wrench, and jack in your trunk and that they are in usable condition. In case your vehicle gets stuck in mud or sand, you can also carry wedges and ropes.",
-				"image": "/3/emergency-supplies.jpeg"
+				"image": "/3/emergency-supplies.jpg"
 			},
 			{
 				"header": "Charging Equipment",
@@ -201,7 +201,7 @@
 			{
 				"header": "Maps",
 				"content": "To mitigate the risk of internet outages or phone malfunctions, carry a printed map detailing your route. Especially when there are no people around to ask for directions, a map can save you from going down the wrong path.",
-				"image": "/3/treasure-map.avif"
+				"image": "/3/treasure-map.jpg"
 			},
 			{
 				"header": "Practical Equipment",
@@ -211,7 +211,7 @@
 			{
 				"header": "Cooking Equipment",
 				"content": "If you're going for an outdoor activity, make sure to carry backup cooking equipment. These could be used to make tea, coffee, or prepare meals during long road stops.",
-				"image": "/3/camp-cookware.jpeg"
+				"image": "/3/camp-cookware.jpg"
 			},
 			{
 				"header": "Camping Kitchen Supplies",
