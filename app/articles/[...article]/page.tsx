@@ -172,7 +172,7 @@ const Article = ({ params }: ArticleParams) => {
 								/>
 							</div>
 						))}
-						{articles[idx].references !== undefined && (
+						{articles[idx].references[0].url !== '' && (
 							<h3 className='my-4 text-2xl font-bold'>
 								References
 							</h3>
