@@ -524,7 +524,7 @@
 	"9": {
 		"title": "The Top 5 Camping Destinations for Families: Where Adventure Meets Fun",
 		"entryParagraph": "Are you looking for the perfect camping destination for your family? If you want to combine the thrill of the great outdoors with fun activities for everyone, you've come to the right place. We've curated a list of the top 5 family-friendly camping destinations where you can roast marshmallows, explore trails, and make memories that last a lifetime.",
-		"entryImage": "/9/camping-family.jpeg",
+		"entryImage": "/9/camping-family.jpg",
 		"sections": [
 			{
 				"header": "Introduction: Why Family Camping Trips are Awesome",
@@ -539,17 +539,17 @@
 			{
 				"header": "Great Smoky Mountains: A Playground for Adventure",
 				"content": "Located on the border of North Carolina and Tennessee, the Great Smoky Mountains offer a mystical experience with their fog-covered peaks. There are several family-friendly camping spots like Cades Cove and Elkmont where you can set up your tent or park your RV. Here, you can explore countless trails, go bear watching, and enjoy nighttime stargazing. The area is also rich in history, making it an educational trip for kids.",
-				"image": "/9/great-smoky-mountains.jpeg"
+				"image": "/9/great-smoky-mountains.jpg"
 			},
 			{
 				"header": "Glacier National Park: A Treasure of the Northwest",
 				"content": "Next on our list is Glacier National Park in Montana. Famous for its glaciers, turquoise lakes, and scenic drives, it offers a different kind of camping experience. Families can enjoy hiking, kayaking, and even guided tours to learn about the area's unique ecosystem. Camping sites like Apgar and Many Glacier are equipped with all the amenities a family needs for a comfortable stay.",
-				"image": "/9/glacier-national-park.jpeg"
+				"image": "/9/glacier-national-park.jpg"
 			},
 			{
 				"header": "Yellowstone National Park: Geysers and Wildlife Galore",
 				"content": "Yellowstone, the first national park in the U.S., is a must-visit for families who love adventure. Located mostly in Wyoming, the park is home to the famous Old Faithful Geyser, hot springs, and a variety of wildlife like bison and elk. Camping options range from primitive sites to those with modern amenities. Activities here are abundant, from fishing and hiking to participating in ranger-led programs that educate kids about the park's geological wonders.",
-				"image": "/9/yellowstone-national-park.webp"
+				"image": "/9/yellowstone-national-park.jpg"
 			},
 			{
 				"header": "Olympic National Park: A Blend of Ecosystems",
