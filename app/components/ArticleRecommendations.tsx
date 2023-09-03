@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import readingTime from 'reading-time';
 import { createURLFriendlyString } from '../utils/createUrlFriendlyString';
+import Image from 'next/image';
 
 type Articles = {
 	[key: string]: {
@@ -51,6 +52,12 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 					)}`}
 				>
 					<div className='bg-orange-50 p-4 flex flex-col justify-between rounded-lg h-full'>
+						<Image
+							src={articles[key].entryImage}
+							alt={articles[key].entryImage.split('/').pop()!}
+							width={600}
+							height={300}
+						/>
 						<div>
 							<div id={`${articles[key].title}`}></div>
 							<h2 className='font-bold'>{`${articles[key].title}`}</h2>
