@@ -1106,8 +1106,52 @@
 		],
 		"references": [
 			{
-				"title": "",
-				"url": ""
+				"title": "Square Knot",
+				"url": "https://en.wikipedia.org/wiki/Reef_knot"
+			},
+			{
+				"title": "Bowline Knot",
+				"url": "https://en.wikipedia.org/wiki/Bowline"
+			},
+			{
+				"title": "The Clove Hitch",
+				"url": "https://en.wikipedia.org/wiki/Clove_hitch"
+			},
+			{
+				"title": "Double Fisherman's Knot",
+				"url": "https://en.wikipedia.org/wiki/Double_fisherman%27s_knot"
+			},
+			{
+				"title": "Taut-line hitch",
+				"url": "https://en.wikipedia.org/wiki/Taut-line_hitch"
+			},
+			{
+				"title": "Sheet bend",
+				"url": "https://en.wikipedia.org/wiki/Sheet_bend"
+			},
+			{
+				"title": "Trucker’s Hitch",
+				"url": "https://en.wikipedia.org/wiki/Trucker%27s_hitch"
+			},
+			{
+				"title": "Figure Eight Knot",
+				"url": "https://en.wikipedia.org/wiki/Figure-eight_knot"
+			},
+			{
+				"title": "Constrictor Knot",
+				"url": "https://en.wikipedia.org/wiki/Constrictor_knot"
+			},
+			{
+				"title": "Water Knot",
+				"url": "https://en.wikipedia.org/wiki/Water_knot"
+			},
+			{
+				"title": "Prusik Knot",
+				"url": "https://en.wikipedia.org/wiki/Prusik_knot"
+			},
+			{
+				"title": "Zeppelin Bend",
+				"url": "https://en.wikipedia.org/wiki/Zeppelin_bend"
 			}
 		]
 	},

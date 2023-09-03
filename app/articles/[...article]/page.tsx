@@ -172,7 +172,7 @@ const Article = ({ params }: ArticleParams) => {
 								/>
 							</div>
 						))}
-						<div className='mb-4'></div>
+						<h3 className='my-4 text-2xl font-bold'>References</h3>
 						<div className='flex gap-2 flex-wrap'>
 							{articles[idx].references.map((item) => {
 								if (!item.url) return null;
