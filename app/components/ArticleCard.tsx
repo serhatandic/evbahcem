@@ -22,7 +22,10 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 		.map((section) => section.content)
 		.join(' ');
 	return (
-		<div className='w-12/12  bg-orange-100 rounded-2xl p-4 flex flex-col justify-between'>
+		<Link
+			className='w-12/12  bg-orange-100 rounded-2xl p-4 flex flex-col justify-between'
+			href={`articles/${id}/${titleWithoutSpecials}`}
+		>
 			<div>
 				<div className='relative h-52 sm:h-96 md:h-52 lg:h-64 w-full mb-4'>
 					<Image
@@ -47,15 +50,12 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 					{readingTime(wholeText).text}
 				</p>
 				<div className='flex justify-end mt-auto'>
-					<Link
-						className='bg-gray-800 text-white rounded-lg px-4 py-2 mt-2'
-						href={`articles/${id}/${titleWithoutSpecials}`}
-					>
-						<button>Details</button>
-					</Link>
+					<button className='bg-gray-800 text-white rounded-lg px-4 py-2 mt-2'>
+						Details
+					</button>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 };
 
