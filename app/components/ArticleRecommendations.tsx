@@ -51,14 +51,15 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 						articles[key].title
 					)}`}
 				>
-					<div className='bg-orange-50 p-4 flex flex-col justify-between rounded-lg h-full'>
-						<Image
-							className=''
-							src={articles[key].entryImage}
-							alt={articles[key].entryImage.split('/').pop()!}
-							width={1920}
-							height={1080}
-						/>
+					<div className='bg-orange-50 p-4 flex flex-col rounded-lg h-full'>
+						<div className='relative h-52 sm:h-96 md:h-72 lg:h-52 w-full mb-4'>
+							<Image
+								className=''
+								src={articles[key].entryImage}
+								alt={articles[key].entryImage.split('/').pop()!}
+								layout='fill'
+							/>
+						</div>
 						<div>
 							<div>
 								<div id={`${articles[key].title}`}></div>

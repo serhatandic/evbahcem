@@ -21,6 +21,8 @@ type Item = {
 const articles = rawArticles as {
 	[key: string]: {
 		title: string;
+		entryParagraph: string;
+		entryImage: string;
 		sections: Array<{
 			header: string;
 			content: string;
