@@ -19,8 +19,8 @@ const DiveInButton = ({ className }: DiveInButtonProps) => {
 					</div>
 				</div>
 				<p className='text-xs font-light md:block'>
-					Expert-authored camping guides covering destinations, gear,
-					and outdoor survival. Your ultimate resource for adventurous
+					Expert-authored guides covering destinations, gear, and
+					outdoor survival. Your ultimate resource for adventurous
 					living.
 				</p>
 			</Link>

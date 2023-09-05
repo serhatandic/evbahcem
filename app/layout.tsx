@@ -8,7 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'CampingAtWild.com - Your Ultimate Destination for Outdoor Adventure',
+	title: 'Your Ultimate Destination for Camping and Outdoors',
 
 	description:
 		'Expert-authored camping guides covering destinations, gear, and outdoor survival. Your ultimate resource for adventurous living.',
