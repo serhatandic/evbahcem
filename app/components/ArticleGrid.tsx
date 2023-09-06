@@ -79,7 +79,7 @@ const ArticleGrid = () => {
 				</p>
 			}
 		>
-			<div className='md:px-24 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 p-4'>
+			<div className='md:px-24 columns-1 sm:columns-2 lg:columns-3 gap-4 p-4'>
 				{partToBeShown}
 			</div>
 		</InfiniteScroll>

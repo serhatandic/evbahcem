@@ -23,22 +23,18 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 		.join(' ');
 	return (
 		<Link
-			className='w-12/12  bg-orange-100 rounded-2xl p-4 flex flex-col justify-between'
+			className='w-12/12 bg-orange-100 rounded-2xl p-4 inline-block mb-4'
 			href={`articles/${id}/${titleWithoutSpecials}`}
 		>
 			<div>
-				<div className='relative h-52 sm:h-96 md:h-52 lg:h-64 w-full mb-4'>
-					<Image
-						alt={
-							article.entryImage
-								.split('/')
-								.slice(-1)[0]
-								.split('.')[0]
-						}
-						src={article.entryImage}
-						layout='fill'
-					/>
-				</div>
+				<Image
+					alt={
+						article.entryImage.split('/').slice(-1)[0].split('.')[0]
+					}
+					src={article.entryImage}
+					width={1920}
+					height={1080}
+				/>
 				<h1 className='text-2xl font-semibold'>{article.title}</h1>
 
 				<p className='mt-4'>
