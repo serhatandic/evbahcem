@@ -27,6 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: '2023-09-04',
 		},
 		{
+			url: 'https://www.campingatwild.com/articles/27/scary-and-funny-campfire-stories-a-guide-to-tales-for-adults-and-kids',
+			lastModified: '2023-09-08',
+		},
+		{
 			url: 'https://www.campingatwild.com/articles/26/unveiling-the-best-camping-locations-near-waterbury-connecticut',
 			lastModified: '2023-09-04',
 		},
