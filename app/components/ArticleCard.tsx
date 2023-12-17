@@ -44,7 +44,7 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 			</div>
 			<div className='flex  mt-8 justify-between items-end'>
 				<p className='opacity-80 text-xs text-gray-800'>
-					{readingTime(wholeText).text}
+					{readingTime(wholeText).text[0] + ' dakikalık okuma'}
 				</p>
 				<div className='flex justify-end mt-auto'>
 					<button className='bg-gray-800 text-white rounded-lg px-4 py-2 mt-2'>

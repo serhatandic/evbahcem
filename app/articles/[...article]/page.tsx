@@ -65,7 +65,10 @@ export async function generateMetadata(
 
 const Article = ({ params }: ArticleParams) => {
 	const idx = params.article[0];
-
+	const readingtime = readingTime(
+		articles[idx].sections.map((section) => section.content).join(' ')
+	).text;
+	const readingtimeTurkish = readingtime[0] + ' dakikalık okuma';
 	return (
 		<div className='bg-gray-100'>
 			<Head>
@@ -95,15 +98,7 @@ const Article = ({ params }: ArticleParams) => {
 									</Link>
 								</span>
 								<p className='opacity-80 text-gray-800 font-normal'>
-									{
-										readingTime(
-											articles[idx].sections
-												.map(
-													(section) => section.content
-												)
-												.join(' ')
-										).text
-									}
+									{readingtimeTurkish}
 								</p>
 							</div>
 						</div>

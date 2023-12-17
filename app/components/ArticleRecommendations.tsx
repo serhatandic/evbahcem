@@ -36,7 +36,7 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 	useEffect(() => {
 		setRandomKeys(
 			Array.from(
-				{ length: 10 },
+				{ length: 0 },
 				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
 			)
 		);

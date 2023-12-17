@@ -8,10 +8,10 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Your Ultimate Destination for Camping and Outdoors',
+	title: 'Bahçeciliği Keşfet, Doğayla Buluş.',
 
 	description:
-		'Expert-authored camping guides covering destinations, gear, and outdoor survival. Your ultimate resource for adventurous living.',
+		'En Kapsamlı Bahçecilik Rehberiniz: İpuçları, Teknikler ve Gerekli Araçlarla Ev Bahçeciliğinizi İyileştirin! Bitki dikimi ve bahçe bakımının inceliklerini keşfedin.',
 };
 
 export default function RootLayout({

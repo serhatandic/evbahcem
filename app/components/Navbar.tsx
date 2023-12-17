@@ -16,7 +16,7 @@ export default function Component({ source }: Source) {
 				source === 'content' ? 'mt-0' : 'mt-7'
 			} w-full items-center align-center flex-col sm:flex-row mb-4`}
 		>
-			<nav className='flex justify-between md:justify-normal gap-2 mb-2 sm:pr-2 sm:mb-0 w-full md:w-auto md:mr-7'>
+			<nav className='flex justify-between md:justify-normal gap-2 mb-2 sm:pr-2 sm:mb-0 w-full md:w-auto md:mr-1'>
 				<Link
 					className={`h-10 text-center flex-1 md:flex-none items-center justify-center rounded-md ${
 						source === 'content'
