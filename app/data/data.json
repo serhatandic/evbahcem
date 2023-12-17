@@ -96,5 +96,118 @@
 				"url": ""
 			}
 		]
+	},
+	"2": {
+		"timestamp": "2023-12-17",
+		"title": "Sürdürülebilir Mikro Bahçecilik – Çevreye Duyarlı Bahçecilik Yöntemleri ve Organik Tarım Uygulamaları",
+		"entryParagraph": "Sürdürülebilir mikro bahçecilik, küçük alanlarda çevreye duyarlı yöntemlerle bahçecilik yapmayı kapsar. Bu yazımızda, sürdürülebilir uygulamalar, organik tarım teknikleri ve bu alanda nasıl başarılı olunacağını ele alacağız. Bahçenizi küçük olmasına rağmen nasıl verimli ve çevreye dost hale getirebileceğinizi öğreneceksiniz.",
+		"entryImage": "/2/surdurulebilir-mikro-bahcecilik.png",
+		"sections": [
+			{
+				"header": "Sürdürülebilir Mikro Bahçecilik Nedir?",
+				"content": "<p>Sürdürülebilir mikro bahçecilik, genellikle kısıtlı alanlarda, doğal kaynakları koruyarak ve çevreye zarar vermeyen yöntemlerle bitki yetiştirmeyi ifade eder. Bu yaklaşım, su ve toprak gibi doğal kaynakların etkin kullanımını, kimyasal gübre ve pestisitlerden kaçınmayı içerir. Mikro bahçeler, balkonlar, teraslar veya küçük arka bahçelerde uygulanabilir.</p>",
+				"image": ""
+			},
+			{
+				"header": "Organik Tarımın Temelleri",
+				"content": "<p>Organik tarım, doğal gübreler ve pestisitler kullanarak toprağın verimliliğini artırır. Kimyasal gübreler yerine kompost, ahır gübresi gibi organik maddeler tercih edilir. Hastalık ve zararlılarla mücadelede ise doğal yöntemler ve biyolojik mücadele teknikleri kullanılır. Organik tarım, bitkilerin daha sağlıklı büyümesini ve gıdaların daha besleyici olmasını sağlar.</p>",
+				"image": ""
+			},
+			{
+				"header": "Su Tasarrufu ve Yönetimi",
+				"content": "<p>Su tasarrufu, sürdürülebilir bahçecilikte kritik bir öneme sahiptir. Damla sulama sistemleri, yağmur suyu toplama yöntemleri ve suyun yeniden kullanımı gibi yöntemlerle su tüketimi minimize edilir. Toprağın nemini koruyarak su ihtiyacını azaltmak için malçlama yöntemleri de uygulanabilir.</p>",
+				"image": ""
+			},
+			{
+				"header": "Toprak Sağlığı ve Gübreleme",
+				"content": "<p>Toprak sağlığını korumak ve iyileştirmek, organik maddelerin toprağa eklenmesiyle sağlanır. Kompost yapımı, toprağın besin maddelerini artırırken, kimyasal gübrelerin olumsuz etkilerinden kaçınılmasını sağlar. Toprağın pH dengesini korumak ve mikrobiyal faaliyeti teşvik etmek de toprak sağlığı için önemlidir.</p>",
+				"image": ""
+			},
+			{
+				"header": "Bitki Seçimi ve Çeşitlilik",
+				"content": "<p>Doğru bitki seçimi, sürdürülebilir bahçecilikte başarıyı belirler. Yerel iklim ve toprak koşullarına uygun bitkiler tercih edilmelidir. Bitki çeşitliliği, zararlılarla doğal mücadeleyi kolaylaştırır ve ekosistemde dengenin korunmasına yardımcı olur.</p>",
+				"image": ""
+			},
+			{
+				"header": "Hastalık ve Zararlılarla Mücadele",
+				"content": "<p>Organik yöntemlerle hastalık ve zararlılarla mücadele, kimyasal ilaçlardan kaçınmayı gerektirir. Doğal düşmanları kullanmak, zararlı popülasyonlarını kontrol altında tutar. Bitki sağlığını korumak için dengeli beslenme ve uygun sulama teknikleri de önemlidir.</p>",
+				"image": ""
+			},
+			{
+				"header": "Uygulamada Sürdürülebilirlik",
+				"content": "<p>Sürdürülebilir bahçecilik uygulamaları, çevre dostu malzemelerin kullanımını, atık azaltmayı ve yerel kaynaklardan yararlanmayı içerir. Enerji verimli araçlar ve yenilenebilir enerji kaynaklarından yararlanmak da bu yaklaşımın bir parçasıdır.</p>",
+				"image": ""
+			},
+			{
+				"header": "Sonuç",
+				"content": "<p>Sürdürülebilir mikro bahçecilik, hem çevreyi korumak hem de sağlıklı gıdalar yetiştirmek için etkili bir yoldur. Küçük alanlarda bile verimli ve çevre dostu bahçeler yaratmak mümkündür. Bu yazıda ele aldığımız yöntemler ve uygulamalar, mikro bahçenizi nasıl daha sürdürülebilir hale getirebileceğiniz konusunda size yol gösterici olacaktır.</p>",
+				"image": ""
+			},
+			{
+				"header": "Sıkça Sorulan Sorular (S.S.S)",
+				"content": "<p><b>1. Mikro bahçecilik için ne kadar alan gerekir?</b><br>Çok küçük alanlar bile yeterli olabilir. Balkonlar, teraslar veya küçük arka bahçeler, mikro bahçecilik için uygun alanlardır.</p><p><b>2. Organik tarım yapmak için özel ürünler mi kullanmalıyım?</b><br>Organik tarım, doğal gübreler ve pestisitler kullanmayı gerektirir. Kimyasal ürünlerden kaçınmak önemlidir.</p><p><b>3. Su tasarrufu için ne yapabilirim?</b><br>Damla sulama sistemleri ve yağmur suyu toplama yöntemleri su tasarrufu sağlar. Malçlama toprağın nemini korur.</p>",
+				"image": ""
+			}
+		],
+		"references": [
+			{
+				"title": "",
+				"url": ""
+			}
+		]
+	},
+	"3": {
+		"timestamp": "2023-12-17",
+		"title": "Çocuklarla Mikro Bahçecilik: Eğlenceli ve Eğitici Projeler",
+		"entryParagraph": "Mikro bahçecilik, çocukların doğa ile iç içe olmalarını, sorumluluk almayı öğrenmelerini ve yaratıcılıklarını geliştirmelerini sağlayan bir etkinliktir. Bu yazıda, çocukları bahçecilik aktivitelerine nasıl dahil edebileceğinizi ve onlar için eğlenceli ve eğitici projeleri nasıl tasarlayabileceğinizi anlatacağım.",
+		"entryImage": "/3/children-gardening.png",
+		"sections": [
+			{
+				"header": "1. Mikro Bahçecilik Nedir?",
+				"content": "<p>Mikro bahçecilik, küçük alanlarda yapılan bahçe işlerini ifade eder. Bu, balkonlarda, pencere kenarlarında veya küçük avlularda bitki yetiştirme pratiğidir. Çocuklar için mikro bahçecilik, onlara doğa hakkında öğretirken aynı zamanda eğlenceli bir aktivite sunar.</p>",
+				"image": ""
+			},
+			{
+				"header": "2. Çocukların İlgi Alanlarını Keşfetme",
+				"content": "<p>Her çocuğun ilgi alanı farklıdır. Kimi renkli çiçeklerle ilgilenirken, kimi sebzelerin büyümesini izlemeyi tercih edebilir. Çocuğunuzun ilgi alanını anlamak, onları bahçecilik projelerine dahil etmenin ilk adımıdır.</p>",
+				"image": ""
+			},
+			{
+				"header": "3. Basit ve Eğitici Bahçecilik Projeleri",
+				"content": "<p>Başlangıç olarak basit projelerle başlayabilirsiniz. Örneğin, fasulye tohumlarının bir kavanozda nasıl filizlendiğini gözlemlemek, çocuklar için hem eğitici hem de eğlenceli olabilir.</p>",
+				"image": ""
+			},
+			{
+				"header": "4. Bahçecilik Araçları ve Güvenlik",
+				"content": "<p>Çocuklar için özel olarak tasarlanmış bahçecilik araçları bulunmaktadır. Bu araçlar, çocukların kullanımına uygun boyut ve ağırlıktadır. Ayrıca, güvenlik kurallarını öğretmek, çocukların bahçede güvenli bir şekilde çalışmalarını sağlar.</p>",
+				"image": ""
+			},
+			{
+				"header": "5. Gözlem Günlüğü Tutma",
+				"content": "<p>Çocukların bahçede yaptıkları işlemleri ve bitkilerin gelişimini bir gözlem günlüğüne yazmaları, onların gözlem yeteneklerini ve yazılı ifade becerilerini geliştirir.</p>",
+				"image": ""
+			},
+			{
+				"header": "6. Doğa ile Bağ Kurma",
+				"content": "<p>Mikro bahçecilik, çocukların doğa ile bağ kurmalarını sağlar. Bitkilerin nasıl büyüdüğünü, nasıl bakım yapıldığını öğrenirken, aynı zamanda doğaya karşı sorumluluk duygusu geliştirirler.</p>",
+				"image": ""
+			},
+			{
+				"header": "7. Bahçe Oyunları ve Yarışmalar",
+				"content": "<p>Bahçecilik aktivitelerini daha eğlenceli hale getirmek için çeşitli oyunlar ve yarışmalar düzenleyebilirsiniz. Örneğin, en hızlı büyüyen bitki yarışması veya en güzel çiçek tasarımı gibi.</p>",
+				"image": ""
+			},
+			{
+				"header": "Sonuç",
+				"content": "<p>Çocuklarla mikro bahçecilik yapmak, onlara doğayı sevdirmenin yanı sıra, yaratıcılıklarını ve sorumluluk duygularını geliştirmelerine yardımcı olur. Bu aktiviteler, ailece kaliteli zaman geçirmenizi de sağlar.</p>",
+				"image": ""
+			}
+		],
+		"references": [
+			{
+				"title": "",
+				"url": ""
+			}
+		]
 	}
 }
