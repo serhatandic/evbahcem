@@ -39,6 +39,7 @@ const PrivacyPolicy = () => {
 							{/* eslint-disable-next-line react/no-unescaped-entities */}
 							Google'ın gizlilik politikasına
 						</a>{' '}
+						{/* eslint-disable-next-line react/no-unescaped-entities*/}
 						bakarak Google'ın bilgilerinizi nasıl kullandığını
 						anlayabilirsiniz.
 					</p>
