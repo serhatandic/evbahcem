@@ -17,6 +17,7 @@ type ArticleParams = {
 
 const articles = rawArticles as {
 	[key: string]: {
+		timestamp: string;
 		title: string;
 		entryParagraph: string;
 		entryImage: string;
@@ -130,7 +131,8 @@ const Article = ({ params }: ArticleParams) => {
 							<div className='flex items-center'>
 								<CalendarIcon className='text-gray-400 w-5 h-5 mr-2' />
 								<span>
-									December 17, 2023 by Archibald Whitney
+									{articles[idx].timestamp} by Archibald
+									Whitney
 								</span>
 							</div>
 							<span className='hidden sm:inline'>•</span>
