@@ -31,7 +31,7 @@ export default function RootLayout({
 			<body
 				className={`${inter.className} flex flex-col justify-between`}
 			>
-				<div className='bg-gray-200 text-gray-800 h-full min-h-screen'>
+				<div className='text-gray-800 h-full min-h-screen'>
 					<Providers>{children}</Providers>
 					<Analytics />
 				</div>

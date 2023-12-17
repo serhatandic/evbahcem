@@ -1,6 +1,5 @@
 'use client';
 import React, { useRef } from 'react';
-import Link from 'next/link';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
 import { useEffect } from 'react';
@@ -93,31 +92,33 @@ const FloatingNavbar = ({ source }: Props) => {
 		};
 	}, [dispatch]);
 	return (
-		<div
-			ref={containerRef}
-			onBlur={handleBlur}
-			className='flex justify-center w-full'
-		>
-			<nav
-				className={`navbar navbar-expand-lg navbar-light bg-light  ${
-					sourcePage !== 'main' ? 'h-10 pl-4' : 'h-10'
-				} w-full bg-white flex items-center gap-8 rounded-md `}
+		<div>
+			<div
+				ref={containerRef}
+				onBlur={handleBlur}
+				className='flex justify-center w-full'
 			>
-				<SearchBar />
-				<CloseIcon
-					className='mr-3 opacity-20'
-					onClick={() => {
-						dispatch(setSearchQuery(''));
-					}}
-				/>
-			</nav>
-			{source === 'main' && (
-				<SearchResults
-					data={searchResults}
-					searchQuery={searchQuery}
-					searchBarHasFocus={searchBarHasFocus}
-				/>
-			)}
+				<nav
+					className={`navbar navbar-expand-lg navbar-light bg-light  ${
+						sourcePage !== 'main' ? 'h-10 pl-4' : 'h-10'
+					} w-full bg-white flex items-center gap-8 rounded-md `}
+				>
+					<SearchBar />
+					<CloseIcon
+						className='mr-3 opacity-20'
+						onClick={() => {
+							dispatch(setSearchQuery(''));
+						}}
+					/>
+				</nav>
+				{source === 'main' && (
+					<SearchResults
+						data={searchResults}
+						searchQuery={searchQuery}
+						searchBarHasFocus={searchBarHasFocus}
+					/>
+				)}
+			</div>
 		</div>
 	);
 };
