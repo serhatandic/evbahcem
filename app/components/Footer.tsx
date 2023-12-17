@@ -7,24 +7,24 @@ const Footer = () => {
 				<div className='flex flex-col items-center justify-center gap-2'>
 					<div className='flex gap-2'>
 						<Link href='/'>
-							<p className='text-xs'>Home</p>
+							<p className='text-xs'>Ana Sayfa</p>
 						</Link>
 						<Link href='/articles'>
-							<p className='text-xs'>Articles</p>
+							<p className='text-xs'>İçerikler</p>
 						</Link>
 					</div>
 					<div className='flex gap-2'>
 						<Link href='/about'>
-							<p className='text-xs'>About</p>
+							<p className='text-xs'>Hakkında</p>
 						</Link>
 						<Link href='/privacy-policy'>
-							<p className='text-xs'>Privacy Policy</p>
+							<p className='text-xs'>Gizlilik Politikası</p>
 						</Link>
 						<Link href='/terms-of-service'>
-							<p className='text-xs'>Terms of Service</p>
+							<p className='text-xs'>Kullanım Şartları</p>
 						</Link>
 						<Link href='/contact'>
-							<p className='text-xs'>Contact</p>
+							<p className='text-xs'>Bize Ulaşın</p>
 						</Link>
 					</div>
 				</div>

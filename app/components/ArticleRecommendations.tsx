@@ -36,14 +36,14 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 	useEffect(() => {
 		setRandomKeys(
 			Array.from(
-				{ length: 8 },
+				{ length: 10 },
 				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
 			)
 		);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [idx]);
 	return (
-		<div className='columns-1 md:columns-2 lg:columns-3'>
+		<div className='columns-1 md:columns-2 lg:columns-4 xl:columns-5'>
 			{randomKeys.map((key, idx) => (
 				<Link
 					className='inline-block mb-4'
@@ -52,8 +52,9 @@ const ArticleRecommendations = ({ idx, articles }: Params) => {
 						articles[key].title
 					)}`}
 				>
-					<div className='bg-orange-50 p-4 flex flex-col rounded-lg h-full'>
+					<div className='bg-gray-100 p-4 flex flex-col rounded-lg h-full'>
 						<Image
+							className='mb-2'
 							src={articles[key].entryImage}
 							alt={articles[key].entryImage.split('/').pop()!}
 							width={1920}

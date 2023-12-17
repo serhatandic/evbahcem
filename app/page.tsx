@@ -2,6 +2,7 @@
 import FloatingNavbar from './components/FloatingNavbar';
 import ShortPitch from './components/ShortPitch';
 import DiveInButtons from './components/DiveInButtons';
+import Navbar from './components/Navbar';
 import { useSelector } from 'react-redux';
 
 type BlurState = {
@@ -15,7 +16,9 @@ export default function Home() {
 	return (
 		<div className='flex justify-center pb-8'>
 			<div className='flex flex-col w-9/12 md:w-6/12 lg:w-5/12 '>
-				<FloatingNavbar source={'main'} />
+				<div className='mt-12'>
+					<FloatingNavbar source={'main'} />
+				</div>
 				<ShortPitch className={`${blur ? 'blur-md' : 'blur-none'}`} />
 				<DiveInButtons
 					className={` ${blur ? 'blur-md' : 'blur-none'}`}

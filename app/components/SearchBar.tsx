@@ -110,7 +110,7 @@ const SearchBar = () => {
 		<div className='flex flex-col relative w-full'>
 			<input
 				value={searchQuery}
-				className='w-10/12 md:w-11/12 focus:outline-none'
+				className='w-10/12 md:w-11/12 focus:outline-none ml-2'
 				placeholder='Search for anything'
 				onChange={handleSearch}
 				onFocus={() => {

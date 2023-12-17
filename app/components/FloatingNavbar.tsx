@@ -96,16 +96,13 @@ const FloatingNavbar = ({ source }: Props) => {
 		<div
 			ref={containerRef}
 			onBlur={handleBlur}
-			className='flex justify-center'
+			className='flex justify-center w-full'
 		>
 			<nav
-				className={`navbar navbar-expand-lg navbar-light bg-light h-12 w-full bg-white mt-7  flex items-center gap-8 ${
-					navbarRounded ? 'rounded-full' : 'rounded-t-3xl'
-				}`}
+				className={`navbar navbar-expand-lg navbar-light bg-light  ${
+					sourcePage !== 'main' ? 'h-10 pl-4' : 'h-10'
+				} w-full bg-white flex items-center gap-8 rounded-md `}
 			>
-				<Link href='/'>
-					<h2 className='ml-4 font-medium'>C@W.com</h2>
-				</Link>
 				<SearchBar />
 				<CloseIcon
 					className='mr-3 opacity-20'

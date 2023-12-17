@@ -8,7 +8,7 @@ const TermsOfService = () => {
 	return (
 		<>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
-				<div className='bg-orange-100 p-8'>
+				<div className='bg-white p-8'>
 					<h1 className='text-2xl font-bold'>
 						Terms of Service - CampingAtWild.com
 					</h1>

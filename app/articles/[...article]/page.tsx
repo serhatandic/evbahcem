@@ -3,6 +3,7 @@ import rawArticles from '../../data/data.json';
 import Link from 'next/link';
 import readingTime from 'reading-time';
 import Image from 'next/image';
+import Navbar from '../../components/Navbar';
 import ReferenceTag from '@/app/components/ReferenceTag';
 import Head from 'next/head';
 import ArticleRecommendations from '@/app/components/ArticleRecommendations';
@@ -66,7 +67,7 @@ const Article = ({ params }: ArticleParams) => {
 	const idx = params.article[0];
 
 	return (
-		<>
+		<div className='bg-gray-100'>
 			<Head>
 				<title>{articles[idx].title}</title>
 				<meta
@@ -74,8 +75,9 @@ const Article = ({ params }: ArticleParams) => {
 					content={articles[idx].entryParagraph}
 				/>
 			</Head>
-			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
-				<div className='bg-orange-100 p-8'>
+			<div className='p-4 md:px-[10%] lg:px-[20%] xl:px-[27%]'>
+				<div className=' p-8 bg-white'>
+					<Navbar source='content' />{' '}
 					<div className='flex gap-2 items-center md:items-center mb-2'>
 						<Image
 							className='rounded-full'
@@ -109,7 +111,6 @@ const Article = ({ params }: ArticleParams) => {
 					<h1 className='text-4xl font-bold mb-2'>
 						{articles[idx].title}
 					</h1>
-
 					{articles[idx]?.entryImage && (
 						<Image
 							className='self-center'
@@ -125,7 +126,6 @@ const Article = ({ params }: ArticleParams) => {
 						/>
 					)}
 					<p className='my-2'>{articles[idx].entryParagraph}</p>
-
 					<div className='bg-gray-800 p-4 my-4 text-orange-50'>
 						<h2 className='text-2xl'>Table of Contents</h2>
 						<div className='mb-4'>
@@ -143,7 +143,6 @@ const Article = ({ params }: ArticleParams) => {
 							</ul>
 						</div>
 					</div>
-
 					<div>
 						{articles[idx].sections.map((section, idx) => (
 							<div key={idx}>
@@ -198,7 +197,7 @@ const Article = ({ params }: ArticleParams) => {
 				</h2>
 				<ArticleRecommendations idx={idx} articles={articles} />
 			</div>
-		</>
+		</div>
 	);
 };
 

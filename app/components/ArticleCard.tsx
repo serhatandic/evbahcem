@@ -23,11 +23,12 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 		.join(' ');
 	return (
 		<Link
-			className='w-12/12 bg-orange-100 rounded-2xl p-4 inline-block mb-4'
+			className='w-12/12 bg-white rounded-2xl p-4 inline-block mb-4'
 			href={`articles/${id}/${titleWithoutSpecials}`}
 		>
 			<div>
 				<Image
+					className='mb-2'
 					alt={
 						article.entryImage.split('/').slice(-1)[0].split('.')[0]
 					}
@@ -38,7 +39,7 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 				<h1 className='text-2xl font-semibold'>{article.title}</h1>
 
 				<p className='mt-4'>
-					{article.sections[0].content?.slice(0, 250) + '...'}
+					{article.entryParagraph?.slice(0, 250) + '...'}
 				</p>
 			</div>
 			<div className='flex  mt-8 justify-between items-end'>

@@ -18,7 +18,7 @@ const SearchResults = ({ data, searchQuery, searchBarHasFocus }: Props) => {
 	return (
 		<>
 			{searchQuery && searchBarHasFocus && (
-				<div className='absolute top-16 w-9/12 md:w-6/12 lg:w-5/12 z-10'>
+				<div className='absolute top-20 w-9/12 md:w-6/12 lg:w-5/12 z-10'>
 					{data.length ? (
 						data.slice(0, 3)?.map((item: Item) => {
 							const titleWithoutSpecials =

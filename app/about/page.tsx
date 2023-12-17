@@ -9,8 +9,8 @@ const AboutPage = () => {
 	return (
 		<>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
-				<div className='bg-orange-100 p-8'>
-					<h1 className='text-4xl font-bold'>Who am i ?</h1>
+				<div className='bg-white p-8'>
+					<h1 className='text-4xl font-bold'>Ben kimim ?</h1>
 					<div className='flex flex-col md:flex-row gap-4 mt-8 items-center'>
 						<Image
 							alt='Picture of the author'
@@ -20,14 +20,20 @@ const AboutPage = () => {
 							className='rounded-full'
 						/>
 						<p className='font-normal'>
-							My name is{' '}
+							Merhabalar! Ben{' '}
 							<span className='font-bold'>Archibald Whitney</span>{' '}
-							and I am a camping enthusiast writing about my
-							experiences and the things I learn along the way. I
-							have been camping for almost 20 years now and I love
-							it. I have a passion for the outdoors and I love to
-							share my knowledge with others. I hope you enjoy my
-							blog !
+							, toprağın sihrini keşfetmeye bayılan bir bahçe
+							severim. Bir tohumun filizlenişini, çiçeklerin
+							açılışını izlemek; her sabah bahçeme selam vermek
+							benim için bir olmazsa olmaz. Yaklaşık 20 yıl önce
+							küçük bir saksıyla başlayan bu serüven, şimdi tüm
+							bir bahçeyi kapsıyor. Yemyeşil yaprakların arasında
+							geçen zamanım, bana hem huzur veriyor hem de doğanın
+							mucizelerini daha yakından tanımama olanak sağlıyor.
+							Bu blogda, sizlere bahçecilik serüvenimin püf
+							noktalarını, pratik bilgilerini ve elbette kişisel
+							deneyimlerimi aktaracağım. Umarım, bu satırlar sizi
+							de kendi yeşil köşenizi yaratmaya teşvik eder.
 						</p>
 					</div>
 				</div>

@@ -1,77 +1,37 @@
 {
 	"0": {
-		"title": "12 Important Points to Consider When Camping in Hot Weather",
-		"entryParagraph": "Camping in hot weather may seem comfortable since you don't have to worry about getting cold, but it can be a challenging experience when the sun's rays are scorching. Camping in hot weather requires careful planning and preparation for a safe and enjoyable adventure. In this blog post, I will share 12 important points to consider when camping in hot weather, which will help you beat the heat and create lasting memories.",
-		"entryImage": "/0/sunny-camp-location.jpg",
+		"title": "Küçük Alanlarda Verimli Bahçecilik: Balkonlar ve Küçük Bahçeler İçin Bitki Önerileri ve Düzenleme İpuçları",
+		"entryParagraph": "Küçük alanlarda bahçecilik, şehir yaşamının sunduğu sınırlı alanlarda doğayla iç içe olmanın yaratıcı bir yoludur. Bu makalemizde, balkonlarınızı ve küçük bahçelerinizi nasıl verimli ve göz alıcı birer yeşil alana dönüştürebileceğinizden bahsedeceğiz. Size özel bitki önerileri ve alanınızı en iyi şekilde kullanmanız için düzenleme ipuçları sunacağız.",
+		"entryImage": "/1/sleeping-bag.jpg",
 		"sections": [
 			{
-				"header": "Choose the Right Location",
-				"content": "Choosing the right camping spot in hot weather is crucial. Look for a location with plenty of shade and access to water. Seek natural shaded areas like forests or large rock formations to protect yourself from direct sunlight. Forests are especially 3-5 degrees cooler than open spaces, which will significantly reduce the intensity of the heat.",
+				"header": "1. Küçük Alan Bahçeciliğinin Temelleri",
+				"content": "<p>Küçük alan bahçeciliği, mevcut alanın potansiyelini maksimize etmeye odaklanır. Balkonlar, teraslar veya küçük bahçeler, doğru planlama ve tasarımla yeşil bir oazise dönüşebilir. Öncelikle mevcut alanınızı iyi değerlendirin ve güneş ışığı, rüzgar gibi dış etkenleri göz önünde bulundurun. Bitkilerinizi seçerken, büyüme alışkanlıkları ve bakım gereksinimlerini de dikkate almalısınız.</p>",
 				"image": ""
 			},
 			{
-				"header": "Time Your Activities",
-				"content": "Timing is everything in hot weather. Plan your activities for early in the morning or late in the evening when it's cooler. Avoid strenuous activities between 11:00 AM and 4:00 PM, which are generally the hottest times of the day.",
+				"header": "2. Balkon ve Küçük Bahçeler İçin Bitki Önerileri",
+				"content": "<p>Balkon ve küçük bahçeler için ideal bitkiler, genellikle az yer kaplayan ve yukarı doğru büyüyen türlerdir. Asılı saksılarla petunya, sardunya gibi çiçekler; duvarlara tırmanabilen sarmaşıklar; ufak meyve ağaçları ve aromatik bitkiler (fesleğen, kekik gibi) bu alanlar için uygundur. Renk ve doku bakımından zengin bir görünüm için çeşitliliğe önem verin.</p>",
 				"image": ""
 			},
 			{
-				"header": "Stay Hydrated",
-				"content": "Staying hydrated is crucial in hot weather. Drink plenty of water throughout the day, even if you don't feel thirsty. Dehydration can sneak up on you and lead to serious health issues. Consider bringing along a reliable water filtration system and drinks rich in electrolytes to replenish essential minerals lost through sweat.",
-				"image": "/0/water-drinking.jpg"
-			},
-			{
-				"header": "Wear Light and Breathable Clothing",
-				"content": "To help keep your body cool, wear light, loose, and breathable clothing. Opt for fabrics in light colors that reflect rather than absorb sunlight. Long-sleeved shirts and pants can also provide protection against harmful sun rays.",
+				"header": "3. Alan Yönetimi ve Düzenleme İpuçları",
+				"content": "<p>Alanınızı en iyi şekilde kullanmak için, yatay ve dikey alanları etkin bir şekilde kullanın. Dikey bahçecilik, sınırlı yerlerde büyük fark yaratabilir. Asma katlar, duvar rafları ve asılı saksılar, hem yerden tasarruf sağlar hem de estetik bir görünüm kazandırır. Ayrıca, katlanabilir mobilyalar ve çok amaçlı aksesuarlar da alan tasarrufu sağlar.</p>",
 				"image": ""
 			},
 			{
-				"header": "Sun Protection",
-				"content": "Never underestimate the power of the sun. Protect yourself with high-factor, broad-spectrum sunscreen and apply it generously. Consider using a wide-brimmed hat, sunglasses, and a UV-blocking umbrella to create shade when sitting outside. This is a matter of great importance that we often overlook.",
-				"image": "/0/sun-protection.jpg"
-			},
-			{
-				"header": "Choose the Right Tent",
-				"content": "Choose a tent specifically designed for camping in hot weather. Look for tents with excellent ventilation and mesh panels to support airflow. Proper ventilation will be your only savior when camping in hot weather. Also, set up your tent in a shady area to prevent it from becoming a greenhouse during the day.",
+				"header": "4. Bakım ve Sulama Önerileri",
+				"content": "<p>Küçük alanlarda bitki bakımı, büyük bahçelere göre daha kolaydır ancak düzenli bakım gerektirir. Bitkilerin ihtiyacına göre düzenli sulama, gübreleme ve budama yapılmalıdır. Otomatik sulama sistemleri ve damla sulama yöntemleri, bu tip alanlar için oldukça işlevseldir ve su tasarrufu sağlar.</p>",
 				"image": ""
 			},
 			{
-				"header": "Cool Down Your Sleeping Area",
-				"content": "A good night's sleep is crucial for an enjoyable camping trip. Sprinkle water around the tent to cool down your sleeping area before going to bed. You can also use a battery-operated fan inside the tent to improve airflow and create a comfortable sleeping environment.",
-				"image": "/0/cooling-fan.jpg"
-			},
-			{
-				"header": "Create Shade with Tarps",
-				"content": "Tarps are a camper's best friend in hot weather. Bring lightweight tarps and ropes to create extra shade around your campsite. Hang them between trees or over your dining area to protect you from the sun throughout the day. Keeping your tent in the shade can also make a difference of 2-4 degrees.",
+				"header": "5. Mevsimlere Göre Bitki Seçimi",
+				"content": "<p>Mevsim değişiklikleri, bitki seçiminizde önemli bir rol oynar. İlkbahar ve yaz aylarında çiçek açan bitkiler; sonbahar ve kış aylarında ise yaprak dökmeyen, yeşil kalan bitkiler tercih edilebilir. Böylece yıl boyunca bahçenizin canlı ve renkli kalmasını sağlayabilirsiniz.</p>",
 				"image": ""
 			},
 			{
-				"header": "Make Use of Water",
-				"content": "Swimming is not only refreshing but also a great way to cool down during a hot camping trip. Look for camping spots near natural bodies of water like lakes or rivers to enjoy a refreshing dive. Just prioritize safety and swim only in designated areas.",
-				"image": "/0/swimming-campers.jpg"
-			},
-			{
-				"header": "Plan Your Meals Wisely",
-				"content": "Opt for light and refreshing meals that require minimal cooking in hot weather. Focus on fresh fruits, salads, and sandwiches. Avoid using a campfire to cook meals in extreme heat, as it can raise the temperature and pose a fire risk.",
-				"image": ""
-			},
-			{
-				"header": "Stay Cool with a Wet Towel",
-				"content": "Store wet towels in a cooler or a waterproof bag. Placing these cooled towels on your neck, forehead, or pulse points will help you cool down quickly and reduce the risk of overheating.",
-				"image": ""
-			},
-			{
-				"header": "Know the Symptoms of Heat-Related Illnesses",
-				"content": "One of the most important things when camping in hot weather is to be informed. Educate yourself and your camping buddies on the symptoms of heat-related illnesses like heat exhaustion, heat stroke, and dehydration. If someone shows symptoms, move them to a shaded area, hydrate them, and seek medical help if necessary.",
-				"image": ""
-			},
-			{
-				"header": "Conclusion",
-				"content": "Camping in hot weather can be an unforgettable experience but requires care and attention. By selecting the right location, staying hydrated, protecting yourself from the sun, and following these 12 essential tips, you can beat the heat and have a great time camping even in the hottest climates. Embrace the beauty of nature while staying cool and comfortable on your next camping adventure. Happy camping!",
-				"image": ""
-			},
-			{
-				"header": "Frequently Asked Questions",
-				"content": "<strong>What are the key times to avoid strenuous activities in hot weather?</strong><br><p>Avoid strenuous activities between 11:00 AM and 4:00 PM, which are generally the hottest times of the day.</p><br><strong>How do I stay hydrated while camping in hot weather?</strong><br><ul><li>Drink plenty of water throughout the day, even if you don't feel thirsty.</li><li>Consider bringing along a reliable water filtration system.</li><li>Drinks rich in electrolytes can also help replenish essential minerals lost through sweat.</li></ul><br><strong>What type of clothing is recommended?</strong><br><p>Wear light, loose, and breathable clothing. Opt for fabrics in light colors that reflect rather than absorb sunlight.</p><br><strong>How can I cool down my tent and sleeping area?</strong><br><ul><li>Sprinkle water around the tent before going to bed.</li><li>Use a battery-operated fan inside the tent to improve airflow.</li></ul><br><strong>What meals are best for camping in hot weather?</strong><br><p>Opt for light and refreshing meals that require minimal cooking. Focus on fresh fruits, salads, and sandwiches.</p><br><strong>What are the symptoms of heat-related illnesses to watch out for?</strong><br><p>Be informed about the symptoms of heat exhaustion, heat stroke, and dehydration. If someone shows symptoms, move them to a shaded area, hydrate them, and seek medical help if necessary.</p>",
+				"header": "6. Sıkça Sorulan Sorular (S.S.S.)",
+				"content": "<p><strong>1. Küçük bir balkonda hangi tür bitkiler yetiştirilebilir?</strong><br>Balkonda, yer kaplamayan ve dikey büyüyen bitkiler tercih edilmelidir. Örnek olarak, saksıda yetiştirilebilecek sebzeler, asılı çiçekler ve aromatik bitkiler idealdir.<br><strong>2. Küçük alanlar için sulama sistemleri nasıl olmalıdır?</strong><br>Damla sulama veya otomatik sulama sistemleri, hem su tasarrufu sağlar hem de bitkilerin düzenli sulanmasına yardımcı olur.<br><strong>3. Balkon bahçeciliğinde hangi gübre kullanılmalıdır?</strong><br>Organik gübreler, balkon bahçeciliği için uygundur. Bitkinin türüne ve ihtiyacına göre gübre seçimi yapılmalıdır.</p>",
 				"image": ""
 			}
 		],
@@ -82,6 +42,7 @@
 			}
 		]
 	},
+
 	"1": {
 		"title": "How to Stay Warm In a Sleeping Bag",
 		"entryParagraph": "One of the most frustrating moments in camping life might be trying to sleep while struggling with the cold inside the tent, especially during late hours when temperatures drop quickly. Particularly in autumn and winter camps, the importance of a sleeping bag becomes vital when air temperatures drop suddenly after midnight. Choosing a season-appropriate sleeping bag can partially solve this problem, but the main issue will be to stay warm inside the sleeping bag.",

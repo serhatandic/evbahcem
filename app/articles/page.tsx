@@ -1,11 +1,11 @@
 import ArticleGrid from '../components/ArticleGrid';
-import FloatingNavbar from '../components/FloatingNavbar';
+import Navbar from '../components/Navbar';
 
 const Articles = () => {
 	return (
 		<div>
 			<div className='md:px-24 px-4'>
-				<FloatingNavbar source={'articles'} />
+				<Navbar source={'articles'} />
 			</div>
 			<ArticleGrid />
 		</div>
