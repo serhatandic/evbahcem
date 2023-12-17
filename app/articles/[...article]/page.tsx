@@ -233,7 +233,7 @@ const Article = ({ params }: ArticleParams) => {
 				</article>
 				<div className='bg-gray-800 p-8 w-full '>
 					<h2 className='font-bold text-2xl mb-4 text-white'>
-						You might also want to read these
+						İlgini Çekebilecek Diğer Makaleler
 					</h2>
 					<ArticleRecommendations idx={idx} articles={articles} />
 				</div>
