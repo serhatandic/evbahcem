@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
 		<>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-white p-8'>
-					<h1 className='font-bold text-2xl'>Privacy Policy</h1>
+					<h1 className='font-bold text-2xl'>Gizlilik Politikası</h1>
 					<h2 className='font-bold text-lg'>Giriş</h2>
 					<p>
 						Gizliliğiniz bizim için önemlidir. Bu gizlilik

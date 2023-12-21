@@ -21,8 +21,8 @@ const AboutPage = () => {
 						/>
 						<p className='font-normal'>
 							Merhabalar! Ben{' '}
-							<span className='font-bold'>Archibald Whitney</span>{' '}
-							, toprağın sihrini keşfetmeye bayılan bir bahçe
+							<span className='font-bold'>Hamide Yaşar</span> ,
+							toprağın sihrini keşfetmeye bayılan bir bahçe
 							severim. Bir tohumun filizlenişini, çiçeklerin
 							açılışını izlemek; her sabah bahçeme selam vermek
 							benim için bir olmazsa olmaz. Yaklaşık 20 yıl önce

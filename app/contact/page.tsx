@@ -12,51 +12,36 @@ const Contact = () => {
 					<h1 className='text-2xl font-bold'>Contact Us</h1>
 
 					<p>
-						We would love to hear from you! Whether you have a
-						question about camping, an article suggestion, or
-						anything else, feel free to reach out. Here are the ways
-						you can contact us:
+						Sizden haber almak isteriz! İster bahçecilik hakkındaki
+						sorularınız, ister makale önerileriniz, herhangi bir şey
+						için çekinmeden ulaşabilirsiniz.
 					</p>
 
 					<h2 className='text-lg font-bold'>Email</h2>
 					<p>
-						You can email us at:{' '}
-						<a href='mailto:campingatwild@gmail.com'>
-							campingatwild@gmail.com
+						<a href='mailto:evbahcem@gmail.com'>
+							evbahcem@gmail.com
 						</a>
 					</p>
 
-					<h2 className='text-lg font-bold'>
-						Frequently Asked Questions
-					</h2>
+					<h2 className='text-lg font-bold'>Sıkça Sorulan Sorular</h2>
 					<ul>
 						<li>
-							<strong>
-								How long does it take for you to respond?
-							</strong>
-							<ul>
-								<li>I aim to respond within 48 hours.</li>
-							</ul>
-						</li>
-						<li>
-							<strong>
-								Can I suggest a topic for an article?
-							</strong>
+							<strong>Ne kadar sürede geri dönüş alırım</strong>
 							<ul>
 								<li>
-									Absolutely! I always welcome suggestions and
-									would love to hear your ideas.
+									48 saat içinde dönüş yapmaya çalışıyorum
 								</li>
 							</ul>
 						</li>
 						<li>
 							<strong>
-								How can I contribute to your website?
+								Web sitenizde makale önerileri yapabilir miyim?
 							</strong>
 							<ul>
 								<li>
-									If you are interested in contributing,
-									please email me your proposal.
+									Kesinlikle, bana e-posta ile önerinizi
+									göndermekten çekinmeyin.
 								</li>
 							</ul>
 						</li>

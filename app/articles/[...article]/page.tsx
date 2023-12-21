@@ -43,8 +43,8 @@ export async function generateMetadata(
 	const titleWithoutSpecials = createURLFriendlyString(title);
 	const description = article.entryParagraph;
 	const imageRelative = article.entryImage;
-	const imageUrl = new URL(`https://campingatwild.com${imageRelative}`);
-	const url = `https://campingatwild.com/articles/${idx}/${titleWithoutSpecials}`;
+	const imageUrl = new URL(`https://evbahcem.com${imageRelative}`);
+	const url = `https://evbahcem.com/articles/${idx}/${titleWithoutSpecials}`;
 	const metadata: Metadata = {
 		title,
 		description,
@@ -151,7 +151,7 @@ const Article = ({ params }: ArticleParams) => {
 									<span className='text-gray-800 opacity-80 text-sm md:text-base lg:text-lg'>
 										Written by camping expert{' '}
 										<Link href={'/about'}>
-											<strong>Archibald Whitney</strong>
+											<strong>Hamide Yaşar</strong>
 										</Link>
 									</span>
 									<p className='opacity-80 text-gray-800 font-normal'>
