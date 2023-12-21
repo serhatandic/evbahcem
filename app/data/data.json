@@ -164,47 +164,42 @@
 	"3": {
 		"timestamp": "2023-12-17",
 		"title": "Çocuklarla Mikro Bahçecilik: Eğlenceli ve Eğitici Projeler",
-		"entryParagraph": "Mikro bahçecilik, çocukların doğa ile iç içe olmalarını, sorumluluk almayı öğrenmelerini ve yaratıcılıklarını geliştirmelerini sağlayan bir etkinliktir. Bu yazıda, çocukları bahçecilik aktivitelerine nasıl dahil edebileceğinizi ve onlar için eğlenceli ve eğitici projeleri nasıl tasarlayabileceğinizi anlatacağım.",
+		"entryParagraph": "Mikro bahçecilik, modern yaşam alanlarında doğayla iç içe olma arzusunu karşılayan, hem eğlenceli hem de öğretici bir aktivite olarak öne çıkıyor. Bu makalede, çocuklarla birlikte yapılacak mikro bahçecilik projelerini ele alacağız. 'Mikro Bahçecilik Nedir ve Çocuklar için Önemi' başlığı altında, bu konseptin temellerini ve çocuklar için getirdiği faydaları inceleyeceğiz. 'Mikro Bahçeciliğin Temelleri: Başlangıç Seviyesi' bölümünde, yeni başlayanlar için gerekli bilgileri paylaşacağız. Ardından, 'Seçilecek Bitkiler' bölümünde, çocuklar için uygun ve bakımı kolay bitki türlerine değineceğiz. 'Eğitici Faaliyetler' kısmında, bahçecilik aracılığıyla çocuklara doğa bilinci kazandırmanın yollarını keşfedeceğiz. 'Mikro Bahçe Tasarımı'nda, çocuklar için hem yaratıcı hem de güvenli alanlar oluşturmanın ipuçlarını vereceğiz. 'Ailece Mikro Bahçecilik' bölümüyle ebeveyn-çocuk etkileşimini artıracak öneriler sunacağız. Son olarak, 'Sonuç' kısmında, mikro bahçecilikle çocuklara kazandırılan değerler ve öğrenim deneyimlerini özetleyeceğiz. Bu makale, hem çocukların doğayla bağ kurmasını sağlayacak hem de aile içi etkileşimi güçlendirecek değerli bilgilerle dolu.",
 		"entryImage": "/3/children-gardening.png",
 		"sections": [
 			{
-				"header": "1. Mikro Bahçecilik Nedir?",
-				"content": "<p>Mikro bahçecilik, küçük alanlarda yapılan bahçe işlerini ifade eder. Bu, balkonlarda, pencere kenarlarında veya küçük avlularda bitki yetiştirme pratiğidir. Çocuklar için mikro bahçecilik, onlara doğa hakkında öğretirken aynı zamanda eğlenceli bir aktivite sunar.</p>",
+				"header": "Mikro Bahçeciliğin Temelleri: Başlangıç Seviyesi",
+				"content": "Mikro bahçeciliğe başlamak için öncelikle gerekli araç gereçler ve temel bilgilerin edinilmesi önemlidir. Başlangıçta, küçük saksılar, toprak, su spreyi, temel bahçe araçları ve seçilecek bitki tohumları veya fideleri gereklidir. Mikro bahçecilik, genellikle minimal bakım gerektirdiğinden, çocukların da kolaylıkla katılım sağlayabileceği bir aktivitedir. Mikro bahçenin kurulacağı yerin belirlenmesi, doğal ışık alıp almadığı ve havalandırmanın yeterli olup olmadığı gibi faktörler, bitkilerin sağlıklı büyümesi için kritik öneme sahiptir. Ayrıca, toprak seçimi ve sulama rutinleri gibi temel bahçecilik bilgileri de bu aşamada öğretilmelidir. Bu temel bilgiler, çocukların bahçecilikle ilgili temel becerilerini ve anlayışlarını geliştirmelerine yardımcı olacak ve onları daha ileri projelere hazırlayacaktır.",
 				"image": ""
 			},
 			{
-				"header": "2. Çocukların İlgi Alanlarını Keşfetme",
-				"content": "<p>Her çocuğun ilgi alanı farklıdır. Kimi renkli çiçeklerle ilgilenirken, kimi sebzelerin büyümesini izlemeyi tercih edebilir. Çocuğunuzun ilgi alanını anlamak, onları bahçecilik projelerine dahil etmenin ilk adımıdır.</p>",
+				"header": "Seçilecek Bitkiler: Çocuklar için Uygun ve Kolay Bakım Gerektiren Türler",
+				"content": "Çocukların bahçecilikte başarılı ve motive olmaları için, onlar için uygun ve bakımı kolay bitki türlerinin seçilmesi önemlidir. Genellikle hızlı büyüyen, renkli çiçekler açan veya ilginç yapılara sahip bitkiler çocukların ilgisini çeker. Örneğin, çilek gibi meyveler, marul veya fesleğen gibi sebzeler ve ayçiçeği veya nasturtium gibi çiçekler, bakımı kolay ve görsel olarak çekici seçeneklerdir. Bu bitkilerin büyüme süreçlerini gözlemlemek, çocuklara doğa döngüsü hakkında değerli dersler verir. Ayrıca, yenilebilir bitkilerin seçilmesi, çocuklara kendi gıdalarını yetiştirmenin tatminini yaşatır ve sağlıklı beslenme alışkanlıklarını teşvik eder. Bitki seçimi yaparken çocukların yaşlarına ve ilgi alanlarına uygun türlerin tercih edilmesi, onların bu etkinliğe daha fazla dahil olmalarını sağlar.",
 				"image": ""
 			},
 			{
-				"header": "3. Basit ve Eğitici Bahçecilik Projeleri",
-				"content": "<p>Başlangıç olarak basit projelerle başlayabilirsiniz. Örneğin, fasulye tohumlarının bir kavanozda nasıl filizlendiğini gözlemlemek, çocuklar için hem eğitici hem de eğlenceli olabilir.</p>",
+				"header": "Eğitici Faaliyetler: Bahçecilikle Çocuklara Doğa Bilinci Kazandırma",
+				"content": "Bahçecilik, çocuklara doğa bilinci kazandırmak için mükemmel bir araçtır. Bu süreçte çocuklar, bitkilerin büyümesini ve doğanın döngüsünü doğrudan gözlemleyerek öğrenirler. Örneğin, tohumların nasıl filizlendiğini, bitkilerin nasıl meyve verdiğini ve mevsim değişikliklerinin bitkiler üzerindeki etkilerini ilk elden deneyimleyebilirler. Ayrıca, bahçecilik aktiviteleri aracılığıyla çocuklar su tasarrufu, kompost yapımı ve sürdürülebilir yaşam pratikleri gibi çevre dostu davranışlar hakkında bilgi edinebilirler. Bu tür eğitici faaliyetler, çocukların ekolojik bilinçlerini artırırken, sorumluluk alma ve problem çözme gibi becerilerini de geliştirir. Eğlenceli ve etkileşimli bahçecilik projeleri düzenlemek, çocukların bu bilgileri daha iyi anlamalarını ve özümsemelerini sağlar.",
 				"image": ""
 			},
 			{
-				"header": "4. Bahçecilik Araçları ve Güvenlik",
-				"content": "<p>Çocuklar için özel olarak tasarlanmış bahçecilik araçları bulunmaktadır. Bu araçlar, çocukların kullanımına uygun boyut ve ağırlıktadır. Ayrıca, güvenlik kurallarını öğretmek, çocukların bahçede güvenli bir şekilde çalışmalarını sağlar.</p>",
+				"header": "Mikro Bahçe Tasarımı: Çocuklar için Yaratıcı ve Güvenli Alanlar Oluşturma",
+				"content": "Mikro bahçe tasarımı, çocukların yaratıcılıklarını sergilemeleri ve güvenli bir şekilde doğayla etkileşimde bulunmaları için önemlidir. Tasarım süreci, çocukların da fikirlerinin alındığı, onların hayal güçlerini kullanabilecekleri bir aktivite olmalıdır. Renkli saksılar, eğlenceli bahçe süslemeleri ve çocukların kolayca ulaşabileceği yükseklikteki raflar, mikro bahçenin hem estetik hem de işlevsel olmasını sağlar. Güvenlik açısından, keskin kenarlar ve zehirli bitkilerden kaçınmak, çocukların güvenle bahçeyle etkileşime girebilmeleri için esastır. Ayrıca, güneş ışığını alacak şekilde yerleştirilmiş ve kolay sulanabilir bir düzen, bitkilerin sağlıklı büyümesi için gereklidir. Bu tür tasarım öğeleri, çocukların bahçecilik deneyimini daha keyifli ve öğretici hale getirirken, aynı zamanda onların güvenliğini de sağlamakta önemli bir rol oynar.",
 				"image": ""
 			},
 			{
-				"header": "5. Gözlem Günlüğü Tutma",
-				"content": "<p>Çocukların bahçede yaptıkları işlemleri ve bitkilerin gelişimini bir gözlem günlüğüne yazmaları, onların gözlem yeteneklerini ve yazılı ifade becerilerini geliştirir.</p>",
+				"header": "Ailece Mikro Bahçecilik: Ebeveyn-Çocuk Etkileşimini Güçlendirme",
+				"content": "Ailece yapılan mikro bahçecilik, ebeveyn ve çocuklar arasındaki etkileşimi güçlendirerek aile bağlarını kuvvetlendirir. Bu aktivite, ebeveynlerin çocuklarına zaman ayırarak, onlarla birlikte öğrenmelerine ve yeni beceriler kazanmalarına olanak tanır. Ebeveynler, çocuklarına toprak hazırlama, tohum ekme, sulama ve bitki bakımı gibi temel bahçecilik becerilerini öğretebilirler. Bu süreç, hem eğitici hem de eğlenceli olabilir ve çocukların doğaya olan ilgisini ve saygısını artırabilir. Ayrıca, ailece alınan kararlar ve birlikte yapılan planlamalar, çocukların karar verme becerilerini ve kendine güvenlerini geliştirmelerine yardımcı olur. Ortak bir hedefe ulaşma sürecinde yaşanan başarılar ve zorluklar, aile üyeleri arasında anlayış ve empati duygularını pekiştirir.",
 				"image": ""
 			},
 			{
-				"header": "6. Doğa ile Bağ Kurma",
-				"content": "<p>Mikro bahçecilik, çocukların doğa ile bağ kurmalarını sağlar. Bitkilerin nasıl büyüdüğünü, nasıl bakım yapıldığını öğrenirken, aynı zamanda doğaya karşı sorumluluk duygusu geliştirirler.</p>",
+				"header": "Sonuç: Mikro Bahçecilikle Çocuklara Kazandırılan Değerler ve Öğrenim Deneyimi",
+				"content": "Mikro bahçecilik, çocuklara doğa sevgisi, sorumluluk, sabır ve gözlem yeteneği gibi değerli dersler kazandırır. Bu süreçte edindikleri pratik beceriler, onların yaşam boyu kullanabilecekleri önemli araçlar haline gelir. Çocuklar, bitkileri büyütürken yaşadıkları zorlukları aşmayı ve başarıları kutlamayı öğrenirler, bu da onların özgüvenlerini ve problem çözme yeteneklerini geliştirir. Ayrıca, ailece yapılan bu etkinlik, aile içi iletişimi güçlendirir ve kaliteli zaman geçirmenin keyfini çıkarmanın bir yolunu sunar. Mikro bahçecilikle çocuklar, doğa ve çevre konularında bilinçli bireyler olarak yetişirler. Sonuç olarak, mikro bahçecilik, çocukların hem kişisel hem de sosyal becerilerinin gelişimine katkıda bulunan, eğlenceli ve eğitici bir deneyim sunar.",
 				"image": ""
 			},
 			{
-				"header": "7. Bahçe Oyunları ve Yarışmalar",
-				"content": "<p>Bahçecilik aktivitelerini daha eğlenceli hale getirmek için çeşitli oyunlar ve yarışmalar düzenleyebilirsiniz. Örneğin, en hızlı büyüyen bitki yarışması veya en güzel çiçek tasarımı gibi.</p>",
-				"image": ""
-			},
-			{
-				"header": "Sonuç",
-				"content": "<p>Çocuklarla mikro bahçecilik yapmak, onlara doğayı sevdirmenin yanı sıra, yaratıcılıklarını ve sorumluluk duygularını geliştirmelerine yardımcı olur. Bu aktiviteler, ailece kaliteli zaman geçirmenizi de sağlar.</p>",
+				"header": "Sıkça Sorulan Sorular (S.S.S)",
+				"content": "",
 				"image": ""
 			}
 		],
