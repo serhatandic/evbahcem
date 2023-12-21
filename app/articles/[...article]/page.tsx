@@ -103,6 +103,16 @@ const Article = ({ params }: ArticleParams) => {
 									.join(' ') + ' ...'}
 							</span>
 						</Breadcrumbs> */}
+						<div className='flex flex-col sm:flex-row items-start text-sm text-gray-500 space-y-2 sm:space-y-0 sm:space-x-2 mb-4'>
+							<div className='flex items-center'>
+								<CalendarIcon className='text-gray-400 w-5 h-5 mr-2' />
+								<span>
+									{articles[idx].timestamp} Hamide Yaşar
+								</span>
+							</div>
+							<span className='hidden sm:inline'>•</span>
+							<span>{readingtimeTurkish}</span>
+						</div>
 						<nav aria-label='Breadcrumb' className='mb-6'>
 							<ol className='list-none p-0 inline-flex flex-wrap space-x-0 sm:space-x-2'>
 								<li className='flex items-center'>
@@ -127,17 +137,7 @@ const Article = ({ params }: ArticleParams) => {
 								</li>
 							</ol>
 						</nav>
-						<div className='flex flex-col sm:flex-row items-start text-sm text-gray-500 space-y-2 sm:space-y-0 sm:space-x-2 mb-4'>
-							<div className='flex items-center'>
-								<CalendarIcon className='text-gray-400 w-5 h-5 mr-2' />
-								<span>
-									{articles[idx].timestamp} by Archibald
-									Whitney
-								</span>
-							</div>
-							<span className='hidden sm:inline'>•</span>
-							<span>{readingtimeTurkish}</span>
-						</div>
+
 						{/* <div className='flex gap-2 items-center md:items-center mb-2'>
 							<Image
 								className='rounded-full'
