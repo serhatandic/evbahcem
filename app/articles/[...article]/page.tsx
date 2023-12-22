@@ -6,7 +6,6 @@ import Image from 'next/image';
 import ReferenceTag from '@/app/components/ReferenceTag';
 import ArticleRecommendations from '@/app/components/ArticleRecommendations';
 import { createURLFriendlyString } from '@/app/utils/createUrlFriendlyString';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { JSX, SVGProps } from 'react';
 
 type ArticleParams = {
