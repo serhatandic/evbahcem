@@ -36,6 +36,8 @@ export default function RootLayout({
 					<Providers>{children}</Providers>
 					<Analytics />
 				</div>
+				<SpeedInsights />
+
 				<Footer />
 			</body>
 		</html>
