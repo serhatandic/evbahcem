@@ -20,6 +20,7 @@ type Item = {
 
 const articles = rawArticles as {
 	[key: string]: {
+		timestamp: string;
 		title: string;
 		entryParagraph: string;
 		entryImage: string;

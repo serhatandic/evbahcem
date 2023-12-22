@@ -6,6 +6,7 @@ import Image from 'next/image';
 type ArticleCardProps = {
 	id: number;
 	article: {
+		timestamp: string;
 		title: string;
 		entryParagraph: string;
 		entryImage: string;
@@ -35,8 +36,10 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 			/>
 			<div className='p-4'>
 				<h1 className='text-2xl font-semibold'>{article.title}</h1>
-
-				<p className='mt-4'>
+				<p className='opacity-80 text-xs text-gray-800 mt-2'>
+					{article.timestamp}
+				</p>
+				<p className='mt-2'>
 					{article.entryParagraph?.slice(0, 250) + '...'}
 				</p>
 			</div>
@@ -46,7 +49,7 @@ const ArticleCard = ({ article, id }: ArticleCardProps) => {
 				</p>
 				<div className='flex justify-end mt-auto'>
 					<button className='bg-gray-800 text-white rounded-lg px-4 py-2 mt-2'>
-						Details
+						Detaylar
 					</button>
 				</div>
 			</div>
