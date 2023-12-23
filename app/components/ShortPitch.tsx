@@ -1,10 +1,6 @@
-type ShortPitchProps = {
-	className: string;
-};
-
-const ShortPitch = ({ className }: ShortPitchProps) => {
+const ShortPitch = () => {
 	return (
-		<div className={className}>
+		<div>
 			<h1 className='self-center mt-14 sm:mt-36 font-bold text-6xl'>
 				Bahçeciliği Keşfet, Doğayla Buluş.
 			</h1>

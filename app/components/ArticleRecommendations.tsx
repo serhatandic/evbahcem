@@ -1,6 +1,4 @@
-'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import readingTime from 'reading-time';
 import { createURLFriendlyString } from '../utils/createUrlFriendlyString';
 import Image from 'next/image';
@@ -28,20 +26,14 @@ type Params = {
 };
 
 const ArticleRecommendations = ({ idx, articles }: Params) => {
-	const [randomKeys, setRandomKeys] = useState<string[]>([]);
-
 	const keys = Object.keys(articles).filter(
 		(_, index) => index !== Number(idx)
 	);
-	useEffect(() => {
-		setRandomKeys(
-			Array.from(
-				{ length: 3 },
-				() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
-			)
-		);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [idx]);
+	const randomKeys = Array.from(
+		{ length: 4 },
+		() => keys.splice(Math.floor(Math.random() * keys.length), 1)[0]
+	);
+
 	return (
 		<div className='columns-1 md:columns-2'>
 			{randomKeys.map((key, idx) => (

@@ -1,12 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Providers } from './components/Providers';
 import Footer from './components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Bahçeciliği Keşfet, Doğayla Buluş.',
@@ -29,15 +25,12 @@ export default function RootLayout({
 					crossOrigin='anonymous'
 				></script>
 			</head>
-			<body
-				className={`${inter.className} flex flex-col justify-between`}
-			>
+			<body className='flex flex-col justify-between'>
 				<div className='text-gray-800 h-full min-h-screen'>
-					<Providers>{children}</Providers>
-					<Analytics />
+					{children}
 				</div>
+				<Analytics />
 				<SpeedInsights />
-
 				<Footer />
 			</body>
 		</html>

@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import ArticleCard from './ArticleCard';
 import rawArticles from '../data/data.json';
@@ -32,40 +31,18 @@ const articles = rawArticles as {
 };
 
 const ArticleGrid = () => {
-	const searchResults = useSelector(
-		(state: SearchResultsState) => state.search.searchResults
-	);
-	const searchQuery = useSelector(
-		(state: SearchResultsState) => state.search.searchQuery
-	);
-
-	const itemsFromSearchResults = searchResults.length ? (
-		searchResults.map((item: Item) => {
-			const id = item.index;
-			return (
-				<ArticleCard key={id} article={articles[id]} id={Number(id)} />
-			);
-		})
-	) : (
-		<p className='px-12'>
-			No results found. Please try again with a different search query.
-		</p>
-	);
-
 	const [sliceEnd, setSliceEnd] = useState(12);
 	const articlesArray = Object.values(articles);
-	const partToBeShown = searchQuery
-		? itemsFromSearchResults
-		: articlesArray
-				.reverse()
-				.slice(0, sliceEnd)
-				.map((article, id) => (
-					<ArticleCard
-						key={articlesArray.length - id - 1}
-						article={article}
-						id={articlesArray.length - id - 1}
-					/>
-				));
+	const partToBeShown = articlesArray
+		.reverse()
+		.slice(0, sliceEnd)
+		.map((article, id) => (
+			<ArticleCard
+				key={articlesArray.length - id - 1}
+				article={article}
+				id={articlesArray.length - id - 1}
+			/>
+		));
 	return (
 		<InfiniteScroll
 			dataLength={sliceEnd}
