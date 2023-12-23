@@ -136,29 +136,6 @@ const Article = ({ params }: ArticleParams) => {
 								</li>
 							</ol>
 						</nav>
-
-						{/* <div className='flex gap-2 items-center md:items-center mb-2'>
-							<Image
-								className='rounded-full'
-								src={'/author.png'}
-								alt='author'
-								width={50}
-								height={50}
-							/>
-							<div className='flex flex-col gap-2'>
-								<div className='flex items-start flex-col'>
-									<span className='text-gray-800 opacity-80 text-sm md:text-base lg:text-lg'>
-										Written by camping expert{' '}
-										<Link href={'/about'}>
-											<strong>Hamide Yaşar</strong>
-										</Link>
-									</span>
-									<p className='opacity-80 text-gray-800 font-normal'>
-										{readingtimeTurkish}
-									</p>
-								</div>
-							</div>
-						</div> */}
 						<h1 className='text-4xl font-bold mb-2'>
 							{articles[idx].title}
 						</h1>

@@ -4,19 +4,6 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import ArticleCard from './ArticleCard';
 import rawArticles from '../data/data.json';
 
-type SearchResultsState = {
-	search: {
-		searchResults: Array<Item>;
-		searchQuery: string;
-	};
-};
-
-type Item = {
-	title: string;
-	index: string;
-	source: string;
-};
-
 const articles = rawArticles as {
 	[key: string]: {
 		timestamp: string;
