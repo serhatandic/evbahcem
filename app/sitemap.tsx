@@ -42,5 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: 'https://www.evbahcem.com/articles/3/cocuklarla-mikro-bahcecilik-eglenceli-ve-egitici-projeler',
 			lastModified: '2023-11-21',
 		},
+		{
+			url: 'https://www.evbahcem.com/articles/4/gecmis-olsun-cicegi-nasil-olmalidir',
+			lastModified: '2023-11-21',
+		},
 	];
 }
