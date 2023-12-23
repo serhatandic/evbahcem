@@ -25,7 +25,7 @@ export default function RootLayout({
 					crossOrigin='anonymous'
 				></script>
 			</head>
-			<body className='flex flex-col justify-between'>
+			<body className='flex flex-col justify-between vsc-initialized'>
 				<div className='text-gray-800 h-full min-h-screen'>
 					{children}
 				</div>
