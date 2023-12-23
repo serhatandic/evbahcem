@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 export const metadata = {
-	title: 'Terms of Service',
+	title: 'Kullanım Şartları - evbahcem.com',
 	description:
-		"Learn about the Terms of Service governing the use of Archibald's Camping Blog. Know your rights and responsibilities while using the website.",
+		"Hamide'nin Blogu'nun kullanımını düzenleyen Hizmet Şartları hakkında bilgi edinin. Web sitesini kullanırken haklarınızı ve sorumluluklarınızı bilin.",
 };
 
 const TermsOfService = () => {

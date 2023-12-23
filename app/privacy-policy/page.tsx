@@ -1,7 +1,7 @@
 export const metadata = {
-	title: 'Privacy Policy',
+	title: 'Gizlilik Politikası - evbahcem.com',
 	description:
-		'Read our Privacy Policy to understand how Archibalds Camping Blog collects, uses, and protects your personal information.',
+		"Hamide'mim Blog'unun kişisel bilgilerinizi nasıl topladığını, kullandığını ve koruduğunu anlamak için Gizlilik Politikamızı okuyun",
 };
 
 const PrivacyPolicy = () => {

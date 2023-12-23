@@ -1,7 +1,7 @@
 export const metadata = {
-	title: 'Contact',
+	title: 'İletişim',
 	description:
-		'Have questions about camping or outdoor adventures? Reach out to Archibald for personalized advice and guidance.',
+		"Ev bahçeciliği hakkında sorularınız mı var? Kişiselleştirilmiş tavsiye ve rehberlik için Hamide'ye ulaşın.",
 };
 
 const Contact = () => {
@@ -9,7 +9,9 @@ const Contact = () => {
 		<>
 			<div className='p-4 md:px-36 lg:px-60 xl:px-80'>
 				<div className='bg-white p-8'>
-					<h1 className='text-2xl font-bold'>Contact Us</h1>
+					<h1 className='text-2xl font-bold'>
+						Bizimle iletişime geçin
+					</h1>
 
 					<p>
 						Sizden haber almak isteriz! İster bahçecilik hakkındaki

@@ -2,7 +2,7 @@ import Image from 'next/image';
 export const metadata = {
 	title: 'About',
 	description:
-		'Learn more about Archibald, a seasoned camper with 20 years of experience. Get to know his passion for the great outdoors.',
+		'Hamide hakkında daha fazla bilgi edinin, o 20 yıllık deneyime sahip tecrübeli bir ev bahçeciliği meraklısı. Onun mini bahçelere olan tutkusunu tanıyın.',
 };
 
 const AboutPage = () => {
