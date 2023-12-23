@@ -1,6 +1,6 @@
 import Image from 'next/image';
 export const metadata = {
-	title: 'About',
+	title: 'Hakkında',
 	description:
 		'Hamide hakkında daha fazla bilgi edinin, o 20 yıllık deneyime sahip tecrübeli bir ev bahçeciliği meraklısı. Onun mini bahçelere olan tutkusunu tanıyın.',
 };
