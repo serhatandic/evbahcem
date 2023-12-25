@@ -46,5 +46,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: 'https://www.evbahcem.com/articles/4/gecmis-olsun-cicegi-nasil-olmalidir',
 			lastModified: '2023-11-21',
 		},
+		{
+			url: 'https://www.evbahcem.com/articles/5/evde-bitki-yetistirmenin-faydalari-saglikli-bir-yasam-icin-yesil-dokunuslar',
+			lastModified: '2023-11-25',
+		},
 	];
 }
